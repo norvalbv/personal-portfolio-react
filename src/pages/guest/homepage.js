@@ -1,9 +1,13 @@
 import React from "react";
+import Footer from "../components/footer/footer";
 import NavBar from "../components/navbar/navbar";
 
 const HomePage = () => {
     return (
-        <NavBar />
+        <div>
+            <NavBar />
+            <Footer />
+        </div>
     )
 }
 
