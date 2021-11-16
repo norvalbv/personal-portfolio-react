@@ -9,12 +9,18 @@ const NavBar = () => {
             </div>
             <nav>
                 <ul className="mainNav flex">
-                    {/* <i class="fas fa-bars" id="menuIcon"></i> */}
-                    <li id="aboutMe"><a href="#about">About Me</a></li>
-                    <li id="skills"><a href="#skill">Skills</a></li>
-                    <li id="projects"><a href="projects.html">My Projects</a></li>
-                    <li id="contact" onclick="openForm()">Contact</li>
+                    <i className="fas fa-bars burger-menu-icon" id="menuIcon"></i>
+                    <li className="nav-item"><a href="#about">About Me</a></li>
+                    <li className="nav-item"><a href="#skill">Skills</a></li>
+                    <li className="nav-item"><a href="projects.html">My Projects</a></li>
+                    <li className="nav-item" onclick="openForm()">Contact</li>
                 </ul>
+                {/* <div className="burger-menu flex">
+                    <li className="burger-item"><a href="#about">About Me</a></li>
+                    <li className="burger-item"><a href="#skill">Skills</a></li>
+                    <li className="burger-item"><a href="projects.html">My Projects</a></li>
+                    <li className="burger-item" onclick="openForm()">Contact</li>
+                </div> */}
             </nav>
         </div>
     )

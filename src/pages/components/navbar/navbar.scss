@@ -36,7 +36,44 @@
     }
 }
 
+.burger-menu-icon {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
+}
+
 #logo {
     position: relative;
     left: 15px;
+}
+
+@media only screen and (max-width: 500px) {
+    .nav-item {
+        display: none !important;
+    }
+
+    .burger-menu-icon {
+        display: block;
+        position: absolute;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .burger-menu {
+        background-color: rgba(255, 255, 255, 0.05);
+        height: 100vh;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 2.25rem;
+        flex-direction: column;
+
+        .burger-item {
+            list-style-type: none;
+            text-align: center;
+            padding: 0.75rem 0;
+        }
+    }
 }

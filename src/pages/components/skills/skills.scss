@@ -1,0 +1,47 @@
+@import '../../universal-styling.scss';
+
+.skills {
+    width: $default-width;
+    margin: 0 auto;
+
+    h2 {
+        @include header2; 
+    }
+    
+    h2, p {
+        text-align: left;
+        margin: 10px 0;
+    }
+    p {
+        font-size: $secondary-paragraph-size;
+    }
+}
+
+.skillsIcons ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    margin: 30px 0;
+
+    li {
+        list-style-type: none;
+        max-width: 150px;
+        margin: 15px 10px 15px 0;
+
+        span {
+            margin-left: 5px;
+        }
+
+        img {
+            max-width: 30%;
+            filter: invert(100%);
+            cursor: pointer;
+            transition: 0.25s;
+
+            &:hover {
+                filter: invert(74%) sepia(30%) saturate(826%) hue-rotate(295deg) brightness(101%) contrast(102%);
+            }            
+        }
+    }
+}

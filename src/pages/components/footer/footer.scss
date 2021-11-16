@@ -9,7 +9,7 @@ footer {
     text-transform: uppercase;
     height: 200px;
     text-align: center;
-    font-size: 12px;
+    font-size: 12px !important;
     border-top: solid 1px rgba(216, 216, 216, 0.25);
     color: white;
 
@@ -44,4 +44,21 @@ footer {
 
 #contact-me { 
     color: #ddd;
+}
+
+@media only screen and (max-width: 400px) {
+    footer {
+        height: 20rem;
+        
+        .left, .right {
+            width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+        
+        p {
+            margin: 1rem 0;
+            text-align: center;
+        }
+    }
 }
