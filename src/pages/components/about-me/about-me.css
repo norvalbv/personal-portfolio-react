@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* colours */
+/* Edits */
+/* Text */
+/* Resets */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Animation reset */
+* {
+  /*CSS transitions*/
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+  /*CSS transforms*/
+  -webkit-transform: none !important;
+  transform: none !important;
+  /*CSS animations*/
+  -webkit-animation: none !important;
+  animation: none !important;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  color: #d8d8d8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+a:visited, a:link {
+  text-decoration: none;
+  color: #ddd;
+}
+
+/* Utility Classes */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
+}
+
+.aboutMe {
+  margin: 75px 0 5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.aboutImage {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[16];
+  -ms-grid-columns: (1fr)[16];
+      grid-template: repeat(16, 1fr)/repeat(16, 1fr);
+}
+
+.aboutImage #overlayImage {
+  z-index: 1;
+  max-width: 70%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 16;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 12;
+  grid-area: 1 / 5 / 17 / 17;
+  -webkit-box-shadow: -5px 5px 10px #5a5a5a;
+          box-shadow: -5px 5px 10px #5a5a5a;
+}
+
+.aboutImage #underlayImage {
+  max-width: 65%;
+  opacity: 0.4;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 15;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 13;
+  grid-area: 2 / 4 / 17 / 17;
+  -webkit-box-shadow: -5px 5px 10px grey;
+          box-shadow: -5px 5px 10px grey;
+}
+
+.aboutText {
+  text-align: center;
+  width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.aboutText h2 {
+  color: #ffa0c7;
+  letter-spacing: 5px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.aboutText p {
+  margin: 7.5% auto 5%;
+  max-width: 70%;
+  color: lightgray;
+}
+
+#split {
+  max-width: 80%;
+  opacity: 0.5;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=about-me.css.map */
