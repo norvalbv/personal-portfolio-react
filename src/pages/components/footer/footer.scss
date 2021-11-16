@@ -1,7 +1,7 @@
 @import '../../universal-styling.scss';
 
 footer {
-    background-color: rgba(58, 58, 58, 0.3);
+    background-color: $primary-neutral-opacity;
     position: relative;
     top: 100vh;
     bottom: 0;
@@ -10,7 +10,7 @@ footer {
     height: 200px;
     text-align: center;
     font-size: 12px !important;
-    border-top: solid 1px rgba(216, 216, 216, 0.25);
+    border-top: solid 1px $border;
     color: white;
 
     h4 {
@@ -43,12 +43,12 @@ footer {
 }
 
 #contact-me { 
-    color: #ddd;
+    color: $primary-light;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     footer {
-        height: 20rem;
+        min-height: 22.5rem;
         
         .left, .right {
             width: 100%;

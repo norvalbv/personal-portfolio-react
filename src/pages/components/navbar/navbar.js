@@ -3,7 +3,7 @@ import './navbar.scss';
 
 const NavBar = () => {
     return (
-        <div className="navbar flex">
+        <div className="navbar">
             <div>
                 <h6 id="logo">BN</h6>
             </div>

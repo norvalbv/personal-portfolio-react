@@ -45,3 +45,10 @@
         }
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .skillsIcons ul li {
+        list-style-type: circle;
+        margin: 0;
+    }
+};

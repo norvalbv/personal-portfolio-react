@@ -2,15 +2,14 @@
 
 
 .navbar {
-    z-index: 1;
     height: 3rem;
+    display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: $primary-neutral-opacity;
     
     nav {
         position: absolute;
         right: 0;
-
         .mainNav {
             align-items: center;
 
@@ -18,18 +17,16 @@
                 display: inline-block;
                 margin: 0 20px;
                 cursor: pointer;
-                transition: 0.5s ease;
+                transition: 0.5s ease !important;
+                // CSS Transition Is Stopped In Universal CSS
                 &:hover {
                     padding-bottom: 5px;
-                    border-bottom-style: solid;
-                    color: $primary-color-pink;
+                    border-bottom: solid;
+                    color: $secondary-clr-1;
                 }
     
-                a {
-                    transition: 0.5s ease;
-                    &:hover {
-                        color: $primary-color-pink;
-                    }
+                a:hover {
+                    color: $secondary-clr-1;
                 }
             }
         }
@@ -62,7 +59,7 @@
     }
 
     .burger-menu {
-        background-color: rgba(255, 255, 255, 0.05);
+        background-color: $primary-neutral-opacity;
         height: 100vh;
         width: 50%;
         position: absolute;

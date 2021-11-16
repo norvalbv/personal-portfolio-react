@@ -179,4 +179,11 @@ a:visited, a:link {
   -webkit-filter: invert(74%) sepia(30%) saturate(826%) hue-rotate(295deg) brightness(101%) contrast(102%);
           filter: invert(74%) sepia(30%) saturate(826%) hue-rotate(295deg) brightness(101%) contrast(102%);
 }
+
+@media only screen and (max-width: 400px) {
+  .skillsIcons ul li {
+    list-style-type: circle;
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=skills.css.map */

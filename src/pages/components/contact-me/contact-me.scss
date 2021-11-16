@@ -1,0 +1,31 @@
+@import '../../universal-styling.scss';
+
+.contact-me {
+    align-items: center;
+    padding: 5rem 2rem;
+    border-top: 1px solid $border;
+    background-color: $primary-neutral-opacity;
+
+    p {
+        padding: 1rem;
+    }
+    
+    button {
+        height: 40px;
+        border: none;
+        border-radius: 5%;
+        cursor: pointer;
+        width: 8rem;
+        color: $primary-light;
+    }
+
+    .primary-btn1 {
+        background-color: $secondary-clr-1;
+        width: 7rem;
+    }
+
+    .primary-btn2 {
+        background-color: $secondary-clr-2;
+        margin-left: 8rem;
+    }
+}
