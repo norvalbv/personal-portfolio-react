@@ -198,4 +198,17 @@ a:visited, a:link {
 .active {
   color: #000;
 }
-/*# sourceMappingURL=portfolio.css.map */
+
+li {
+  padding: 0.25rem 0.75rem;
+  font-size: 10px;
+  cursor: pointer;
+  background-color: rgba(58, 58, 58, 0.3);
+  border-radius: 10px;
+  color: #fff;
+}
+
+li:hover {
+  color: #72d865;
+}
+/*# sourceMappingURL=portfolio-list.css.map */
