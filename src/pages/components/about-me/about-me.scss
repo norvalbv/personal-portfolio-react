@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: pink;
+    background-color: #000;
 }
 
 .aboutImage {
@@ -45,6 +45,7 @@
         margin: 7.5% auto 5%;
         max-width: 70%;
         color: $primary-light;
+        font-size: 12px;
     }
 }
 
@@ -58,11 +59,19 @@
     .aboutText {
         margin-top: 2rem;
         width: 100%;
+
+        p {
+            font-size: 14px;
+        }
     }
 
     .aboutMe {
         flex-direction: column-reverse;
         justify-content: flex-start;
+    }
+
+    .aboutImage {
+        display: inline-block;
     }
     
     #underlayImage {
@@ -72,7 +81,8 @@
     #overlayImage {
         border-radius: 15%;
         box-shadow: none;
-        width: 40%;
-        display: none;
+        margin: 0 auto;
+        width: 22.5%;
+        display: block;
     }
 }

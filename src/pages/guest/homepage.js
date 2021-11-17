@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import AboutMe from "../components/about-me/about-me";
+import AboutMe from "../components/about-me/about-me";
 // import ContactMe from "../components/contact-me/contact-me";
 // import Footer from "../components/footer/footer";
 import NavBar from "../components/navbar/navbar";
@@ -16,7 +16,7 @@ const HomePage = () => {
             <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
             <div className="sections">
                 <Intro />
-                {/* <AboutMe /> */}
+                <AboutMe />
                 <Portfolio />
                 <SkillsUpdate />
                 {/* <ContactMe />
