@@ -1,6 +1,6 @@
 import React from "react";
 import './navbar.scss';
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 
 const NavBar = () => {
     return (
@@ -18,8 +18,22 @@ const NavBar = () => {
                         <li className="nav-item" onclick="openForm()">Contact</li>
                     </ul>
                 </div>
-                <div className="burger-menu">
-                    <MenuIcon />
+                <div className="hamburger">
+                    <div className="icon">
+                        {/* <MenuIcon /> */}
+                        <span className="line1"></span>
+                        <span className="line2"></span>
+                        <span className="line3"></span>
+                    </div>
+                    <div className="hamburger-menu active">
+                        <ul>
+                            <li className="hamburger-item"><a href="#">Home</a></li>
+                            <li className="hamburger-item"><a href="#about">About Me</a></li>
+                            <li className="hamburger-item"><a href="#skill">Skills</a></li>
+                            <li className="hamburger-item"><a href="projects.html">My Projects</a></li>
+                            <li className="hamburger-item" onclick="openForm()">Contact</li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
