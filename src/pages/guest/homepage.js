@@ -1,22 +1,23 @@
 import React from "react";
-import AboutMe from "../components/about-me/about-me";
-import CodingProjects from "../components/coding-projects/coding-projects";
-import ContactMe from "../components/contact-me/contact-me";
-import Footer from "../components/footer/footer";
+// import AboutMe from "../components/about-me/about-me";
+// import ContactMe from "../components/contact-me/contact-me";
+// import Footer from "../components/footer/footer";
 import NavBar from "../components/navbar/navbar";
-import Skills from "../components/skills/skills";
-import WorkExperience from "../components/work-experience/work-experience";
+import Portfolio from "../components/portfolio/portfolio";
+import SkillsUpdate from "../components/skills-update/skills-update";
+import './homepage.scss';
 
 const HomePage = () => {
     return (
-        <div>
+        <div className="app">
             <NavBar />
-            <AboutMe />
-            <WorkExperience />
-            <CodingProjects />
-            <Skills />
-            <ContactMe />
-            <Footer />
+            <div className="sections">
+                {/* <AboutMe /> */}
+                <Portfolio />
+                <SkillsUpdate />
+                {/* <ContactMe />
+                <Footer /> */}
+            </div>
         </div>
     )
 }

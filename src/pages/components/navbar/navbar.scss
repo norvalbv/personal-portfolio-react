@@ -10,6 +10,7 @@
     nav {
         position: absolute;
         right: 0;
+
         .mainNav {
             align-items: center;
 
@@ -33,10 +34,6 @@
     }
 }
 
-.burger-menu-icon {
-    display: none;
-}
-
 .burger-menu {
     display: none;
 }
@@ -46,26 +43,16 @@
     left: 15px;
 }
 
-@media only screen and (max-width: 500px) {
-    .nav-item {
-        display: none !important;
-    }
-
-    .burger-menu-icon {
-        display: block;
-        position: absolute;
-        right: 15px;
-        cursor: pointer;
+@media only screen and (max-width: 550px) {
+    
+    .mainNav {
+        display: none;
     }
 
     .burger-menu {
-        background-color: $primary-neutral-opacity;
-        height: 100vh;
-        width: 50%;
-        position: absolute;
-        right: 0;
-        top: 2.25rem;
-        flex-direction: column;
+        display: block;
+        position: relative;
+        right: 1rem;
 
         .burger-item {
             list-style-type: none;

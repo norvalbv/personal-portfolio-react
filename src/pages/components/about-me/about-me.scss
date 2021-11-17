@@ -1,12 +1,14 @@
 @import '../../universal-styling.scss';
 
 .aboutMe {
-    margin: 75px 0 5rem;
+    // margin-bottom: 5rem;
     width: 100%;
+    height: calc( 100vh - 3rem);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    background-color: pink;
 }
 
 .aboutImage {
@@ -54,6 +56,7 @@
     }
 
     .aboutText {
+        margin-top: 2rem;
         width: 100%;
     }
 
@@ -70,5 +73,6 @@
         border-radius: 15%;
         box-shadow: none;
         width: 40%;
+        display: none;
     }
 }

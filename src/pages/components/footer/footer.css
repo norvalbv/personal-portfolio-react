@@ -124,7 +124,6 @@ a:visited, a:link {
 footer {
   background-color: rgba(58, 58, 58, 0.3);
   position: relative;
-  top: 50vh;
   bottom: 0;
   font-weight: lighter;
   text-transform: uppercase;
@@ -166,7 +165,7 @@ footer p {
 }
 
 #contact-me {
-  color: lightgray;
+  color: inherit;
 }
 
 @media only screen and (max-width: 500px) {

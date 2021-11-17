@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,gBAAgB,EAAE,UAAU;CAC/B",
+    "sources": [
+        "skills-update.scss"
+    ],
+    "names": [],
+    "file": "skills-update.css"
+}

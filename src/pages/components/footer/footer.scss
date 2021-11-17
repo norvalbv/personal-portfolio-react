@@ -3,7 +3,6 @@
 footer {
     background-color: $primary-neutral-opacity;
     position: relative;
-    top: 50vh;
     bottom: 0;
     font-weight: lighter;
     text-transform: uppercase;
@@ -44,7 +43,7 @@ footer {
 }
 
 #contact-me { 
-    color: $primary-light;
+    color: inherit;
 }
 
 @media only screen and (max-width: 500px) {
