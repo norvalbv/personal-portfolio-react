@@ -2,7 +2,7 @@ import React from "react";
 import './navbar.scss';
 // import MenuIcon from '@mui/icons-material/Menu';
 
-const NavBar = () => {
+const NavBar = ({ menuOpen, setMenuOpen }) => {
     return (
         <div className="navbar">
             <div>
@@ -25,7 +25,7 @@ const NavBar = () => {
                         <span className="line2"></span>
                         <span className="line3"></span>
                     </div>
-                    <div className="hamburger-menu active">
+                    <div className={"hamburger-menu " + (menuOpen && "active")}>
                         <ul>
                             <li className="hamburger-item"><a href="#">Home</a></li>
                             <li className="hamburger-item"><a href="#about">About Me</a></li>

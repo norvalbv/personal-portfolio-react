@@ -18,11 +18,13 @@
                 display: inline-block;
                 margin: 0 20px;
                 cursor: pointer;
-                // transition: 2s ease !important;
+                height: 25px;
+                // transition: 0.5s ease !important;
                 // CSS not working on anchor tags.
                 // CSS Transition Is Stopped In Universal CSS
                 &:hover {
-                    text-decoration: underline;
+                    // padding-bottom: 5px;
+                    border-bottom: solid;
                     color: $secondary-clr-1;
                 }
     
@@ -36,6 +38,9 @@
 
 .hamburger {
     display: none;
+    .hamburger-menu {
+        display: none;
+    }
 }
 
 #logo {
@@ -54,7 +59,6 @@
         position: relative;
         right: 0;
         top: 0;
-
         
         .icon {
             position: relative;
@@ -73,17 +77,6 @@
             }
         }
 
-        .active {
-            height: 100vh;
-            width: 30vh;
-            background-color: $primary-neutral;
-            position: absolute;
-            top: 2rem;
-
-            // why is it top 2rem?
-
-            right: 0;
-        }
 
         .hamburger-menu {
 
@@ -93,9 +86,22 @@
                 gap: 0.75rem;
                 margin: 1rem 1rem 0;
                 li {
-                    font-size: 1.25rem;
+                    font-size: 1rem;
                     cursor: pointer;
                 }
+            }
+
+            &.active {
+                display: block;
+                height: calc( 100vh - 3rem);
+                width: 40vh;
+                background-color: $primary-neutral;
+                position: absolute;
+                top: 2rem;
+    
+                // why is it top 2rem?
+    
+                right: 0;
             }
         }
     }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import AboutMe from "../components/about-me/about-me";
 // import ContactMe from "../components/contact-me/contact-me";
 // import Footer from "../components/footer/footer";
@@ -8,9 +8,11 @@ import SkillsUpdate from "../components/skills-update/skills-update";
 import './homepage.scss';
 
 const HomePage = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     return (
         <div className="app">
-            <NavBar />
+            <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
             <div className="sections">
                 {/* <AboutMe /> */}
                 <Portfolio />
