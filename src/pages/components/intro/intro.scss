@@ -1,0 +1,81 @@
+@import '../../universal-styling.scss';
+
+.intro {
+    height: calc( 100vh - 3rem) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+    .text {
+        width: 60%;
+        height: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+
+        h1 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-size: 1rem;
+            line-height: 1.8;
+
+            span {
+                color: $secondary-clr-2;
+
+                                
+                .ityped-cursor {
+                    -webkit-animation: blink 1s infinite !important;
+                    -moz-animation: blink 1s infinite !important;
+                    animation: blink 1s infinite !important;
+                    animation-direction: alternate !important;
+                }
+
+                @keyframes blink {
+                    50% {
+                        opacity: 1;
+                    }
+
+                    100% {
+                        opacity: 0;
+                    }
+                }
+
+                @-webkit-keyframes blink {
+                    50% {
+                        opacity: 1;
+                    }
+
+                    100% {
+                        opacity: 0;
+                    }
+                }
+                 
+                @-moz-keyframes blink {
+                    50% {
+                        opacity: 1;
+                    }
+
+                    100% {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#backgroundVideo {
+    width: 100%;
+    height: calc(100vh -3rem);
+    position: absolute;
+    z-index: -1;
+    top: 3rem;
+    overflow: hidden;
+}
