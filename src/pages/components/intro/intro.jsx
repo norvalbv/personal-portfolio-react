@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import './intro.scss';
 import { init } from 'ityped'
 import background from '../../../files/pexels-mart-production-7565462.mp4';
+import portraitBackground from '../../../files/background-portrait.mp4'
 
 export default function Intro() {
     const textRef = useRef();
@@ -18,10 +19,8 @@ export default function Intro() {
 
     return (
         <div className="intro">
-            {/* <video autoplay loop muted id="backgroundVideo">
-                <source src={background} type="video/mp4" />
-            </video> */}
             <video autostart loop muted autoPlay src={background} type="video/mp4" id="backgroundVideo"></video>
+            <video autostart loop muted autoPlay src={portraitBackground} type="video/mp4" id="portrait-backgroundVideo"></video>
             <div className="text">
                 <h1>Benjamin Norval</h1>
                 <h2>A 22 year old <span ref={textRef}></span> 

@@ -125,32 +125,42 @@ a:visited, a:link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 5rem 2rem;
   border-top: 1px solid rgba(179, 179, 179, 0.25);
+  border-bottom: 1px solid rgba(179, 179, 179, 0.25);
   background-color: rgba(58, 58, 58, 0.3);
   height: 10rem !important;
 }
 
 .contact-me p {
   padding: 1rem;
+  font-size: 14px;
 }
 
-.contact-me button {
+.contact-me div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-me div button {
   height: 40px;
   border: none;
   border-radius: 5%;
   cursor: pointer;
   width: 8rem;
-  color: lightgray;
+  color: #fff;
+  margin: 0 1rem;
 }
 
-.contact-me .primary-btn1 {
+.contact-me div .primary-btn1 {
   background-color: #ffa0c7;
   width: 7rem;
 }
 
-.contact-me .primary-btn2 {
+.contact-me div .primary-btn2 {
   background-color: #72d865;
-  margin-left: 8rem;
 }
 /*# sourceMappingURL=contact-me.css.map */

@@ -200,4 +200,23 @@ a:visited, a:link {
   top: 3rem;
   overflow: hidden;
 }
+
+#portrait-backgroundVideo {
+  width: 100%;
+  height: calc(100vh -3rem);
+  position: absolute;
+  z-index: -1;
+  top: 3rem;
+  overflow: hidden;
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  #backgroundVideo {
+    display: none;
+  }
+  #portrait-backgroundVideo {
+    display: block;
+  }
+}
 /*# sourceMappingURL=intro.css.map */
