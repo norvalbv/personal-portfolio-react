@@ -19,7 +19,7 @@ const NavBar = ({ menuOpen, setMenuOpen }) => {
                     </ul>
                 </div>
                 <div className="hamburger">
-                    <div className="icon">
+                    <div className="icon" onClick={() => setMenuOpen(!menuOpen)}>
                         {/* <MenuIcon /> */}
                         <span className="line1"></span>
                         <span className="line2"></span>

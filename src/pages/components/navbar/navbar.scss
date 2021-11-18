@@ -79,7 +79,7 @@
         }
 
 
-        .hamburger-menu {
+        .hamburger-menu, .active {
 
             ul {
                 display: flex;
@@ -93,10 +93,11 @@
             }
 
             &.active {
+                border-top: 1px solid $border;
                 display: block;
                 height: calc( 100vh - 3rem);
                 width: 40vh;
-                background-color: $primary-neutral;
+                background-color: #121212;
                 position: absolute;
                 top: 2rem;
     
@@ -104,6 +105,20 @@
     
                 right: 0;
             }
+        }
+    }
+}
+
+.hamburger-item {
+    color: $primary-light;
+
+    &:hover {
+        color: $secondary-clr-1;
+    }
+
+    a {
+        &:hover {
+            color: $secondary-clr-1;
         }
     }
 }

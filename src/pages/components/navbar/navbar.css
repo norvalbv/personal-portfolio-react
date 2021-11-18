@@ -203,7 +203,7 @@ a:visited, a:link {
     height: 2px;
     background-color: lightgray;
   }
-  .hamburger .hamburger-menu ul {
+  .hamburger .hamburger-menu ul, .hamburger .active ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -214,18 +214,31 @@ a:visited, a:link {
     gap: 0.75rem;
     margin: 1rem 1rem 0;
   }
-  .hamburger .hamburger-menu ul li {
+  .hamburger .hamburger-menu ul li, .hamburger .active ul li {
     font-size: 1rem;
     cursor: pointer;
   }
-  .hamburger .hamburger-menu.active {
+  .hamburger .hamburger-menu.active, .hamburger .active.active {
+    border-top: 1px solid rgba(179, 179, 179, 0.25);
     display: block;
     height: calc( 100vh - 3rem);
     width: 40vh;
-    background-color: #3a3a3a;
+    background-color: #121212;
     position: absolute;
     top: 2rem;
     right: 0;
   }
+}
+
+.hamburger-item {
+  color: lightgray;
+}
+
+.hamburger-item:hover {
+  color: #ffa0c7;
+}
+
+.hamburger-item a:hover {
+  color: #ffa0c7;
 }
 /*# sourceMappingURL=navbar.css.map */
