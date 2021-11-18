@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import AboutMe from "../components/about-me/about-me";
-// import ContactMe from "../components/contact-me/contact-me";
-// import Footer from "../components/footer/footer";
+import ContactMe from "../components/contact-me/contact-me";
+import Footer from "../components/footer/footer";
 import NavBar from "../components/navbar/navbar";
 import Intro from "../components/intro/intro";
 import Portfolio from "../components/portfolio/portfolio";
-import SkillsUpdate from "../components/skills-update/skills-update";
+import Skills from "../components/skills/skills";
 import './homepage.scss';
 
 const HomePage = () => {
@@ -18,9 +18,9 @@ const HomePage = () => {
                 <Intro />
                 <AboutMe />
                 <Portfolio />
-                <SkillsUpdate />
-                {/* <ContactMe />
-                <Footer /> */}
+                <Skills />
+                <ContactMe />
+                <Footer />
             </div>
         </div>
     )

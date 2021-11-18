@@ -11,10 +11,10 @@ export default function Portfolio() {
         { id: "work-experience", title: "Work Experience"}, 
         { id: "coding-projects", title: "Coding Projects"}
     ];
-    
+
     return (
-        <div className="portfolio flex">
-            <h2>Portfolio</h2>
+        <div className="portfolio flex" id="my-work">
+            <h2>My Work</h2>
             <ul className="work-type">
                 {list.map(item => {
                     return <PortfolioList title={item.title} 
@@ -24,7 +24,7 @@ export default function Portfolio() {
                     />
                 })}
             </ul>
-            <div className="container">
+            <div className="work-container">
                 <div className="item1">
                     <h3>Space Project</h3>
                 </div>

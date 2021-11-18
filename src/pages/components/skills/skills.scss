@@ -3,6 +3,7 @@
 .skills {
     width: $default-width;
     margin: 0 auto;
+    height: 80vh !important;
 
     h2 {
         @include header2; 
@@ -30,13 +31,12 @@
         margin: 15px 10px 15px 0;
 
         span {
-            margin-left: 5px;
+            margin-left: 10px;
         }
 
         img {
             max-width: 30%;
             filter: invert(100%);
-            cursor: pointer;
             transition: 0.25s;
 
             &:hover {

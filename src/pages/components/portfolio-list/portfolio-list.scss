@@ -1,14 +1,16 @@
 @import '../portfolio/portfolio.scss';
 
-li {
-    padding: 0.25rem 0.75rem;
-    font-size: 10px;
-    cursor: pointer;
-    background-color: $primary-neutral-opacity;
-    border-radius: 10px;
-    color: #fff;
-
-    &:hover {
-        color: $secondary-clr-2;
+.item-div {
+    li {
+        padding: 0.25rem 0.75rem;
+        font-size: 10px;
+        cursor: pointer;
+        background-color: $primary-neutral-opacity;
+        border-radius: 10px;
+        color: #fff;
+    
+        &:hover {
+            color: $secondary-clr-2;
+        }
     }
 }

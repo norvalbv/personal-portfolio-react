@@ -13,8 +13,8 @@ const NavBar = ({ menuOpen, setMenuOpen }) => {
                     <ul className="flex">
                         <li className="nav-item"><a href="#">Home</a></li>
                         <li className="nav-item"><a href="#about">About Me</a></li>
-                        <li className="nav-item"><a href="#skill">Skills</a></li>
-                        <li className="nav-item"><a href="projects.html">My Projects</a></li>
+                        <li className="nav-item"><a href="#my-work">My Work</a></li>
+                        <li className="nav-item"><a href="#skills">Skills</a></li>
                         <li className="nav-item" onclick="openForm()">Contact</li>
                     </ul>
                 </div>
@@ -29,8 +29,8 @@ const NavBar = ({ menuOpen, setMenuOpen }) => {
                         <ul>
                             <li className="hamburger-item"><a href="#">Home</a></li>
                             <li className="hamburger-item"><a href="#about">About Me</a></li>
-                            <li className="hamburger-item"><a href="#skill">Skills</a></li>
-                            <li className="hamburger-item"><a href="projects.html">My Projects</a></li>
+                            <li className="hamburger-item"><a href="#mywork">My Work</a></li>
+                            <li className="hamburger-item"><a href="#skills">Skills</a></li>
                             <li className="hamburger-item" onclick="openForm()">Contact</li>
                         </ul>
                     </div>
