@@ -1,6 +1,7 @@
 import React from "react";
 import './about-me.scss';
 import profilePhoto from '../../../files/profile-photo.png'
+import pdfCV from '../../../files/benjamin-cv.pdf';
 
 const AboutMe = () => {
     return (
@@ -18,6 +19,7 @@ const AboutMe = () => {
                 <br />
                 <br />
                 I am a driven, confident, and quick learner looking to utilise my skills and passion within the business sector.</p>
+                <button><a href={pdfCV} target="_blank">Download my CV</a></button>
             </div>
         </div>
     );

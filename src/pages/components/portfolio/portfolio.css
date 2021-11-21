@@ -122,7 +122,7 @@ a:visited, a:link {
 }
 
 .portfolio {
-  background-color: #000;
+  background-color: #fff;
   margin: auto;
   inset: 0;
   -webkit-box-orient: vertical;
@@ -197,5 +197,11 @@ a:visited, a:link {
 
 .active {
   color: #000;
+}
+
+@media only screen and (max-width: 500px) {
+  .work-container {
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

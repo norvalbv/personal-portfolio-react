@@ -1,9 +1,7 @@
 @import '../../universal-styling.scss';
 
 .aboutMe {
-    // margin-bottom: 5rem;
     width: 100%;
-    height: calc( 100vh - 3rem);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +43,18 @@
         margin: 7.5% auto 5%;
         max-width: 70%;
         color: $primary-light;
-        font-size: 12px;
+        font-size: 16px;
+    }
+
+    button {
+        height: 40px;
+        border: none;
+        border-radius: 5%;
+        cursor: pointer;
+        width: 8rem;
+        color: #fff;
+        margin: 0 1rem;
+        background-color: $secondary-clr-1;
     }
 }
 
@@ -57,12 +66,8 @@
     }
 
     .aboutText {
-        margin-top: 2rem;
+        margin-top: 10rem;
         width: 100%;
-
-        p {
-            font-size: 14px;
-        }
     }
 
     .aboutMe {
@@ -82,7 +87,7 @@
         border-radius: 15%;
         box-shadow: none;
         margin: 0 auto;
-        width: 22.5%;
+        width: 27.5%;
         display: block;
     }
 }

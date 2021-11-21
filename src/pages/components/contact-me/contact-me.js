@@ -7,7 +7,7 @@ const ContactMe = () => {
             <p>If you would like to get into contact with me, you can do so at any point. Feel free to view my past work</p>
             <div>
                 <button className="primary-btn1">Contact Me</button>
-                <button className="primary-btn2">View my work</button>
+                <button className="primary-btn2"><a href="#my-work">View my work</a></button>
             </div>
         </div>
     )
