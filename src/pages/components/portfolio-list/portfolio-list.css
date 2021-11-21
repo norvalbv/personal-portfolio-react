@@ -199,6 +199,12 @@ a:visited, a:link {
   color: #000;
 }
 
+@media only screen and (max-width: 500px) {
+  .work-container {
+    max-width: 100%;
+  }
+}
+
 .item-div li {
   padding: 0.25rem 0.75rem;
   font-size: 10px;

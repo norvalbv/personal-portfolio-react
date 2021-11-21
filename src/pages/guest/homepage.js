@@ -6,19 +6,15 @@ import NavBar from "../components/navbar/navbar";
 import Intro from "../components/intro/intro";
 import Portfolio from "../components/portfolio/portfolio";
 import Skills from "../components/skills/skills";
-import ContactPopUp from "../components/contact-popup/contact-popup";
 import './homepage.scss';
 
 const HomePage = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [contactOpen, setContactOpen] = useState(false);
-
     return (
         <div className="app">
             <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
             <div className="sections">
                 <Intro />
-                <ContactPopUp />
                 <AboutMe />
                 <Portfolio />
                 <Skills />

@@ -123,7 +123,6 @@ a:visited, a:link {
 
 .aboutMe {
   width: 100%;
-  height: calc( 100vh - 3rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,6 +192,17 @@ a:visited, a:link {
   max-width: 70%;
   color: lightgray;
   font-size: 16px;
+}
+
+.aboutText button {
+  height: 40px;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  width: 8rem;
+  color: #fff;
+  margin: 0 1rem;
+  background-color: #ffa0c7;
 }
 
 @media only screen and (max-width: 800px) {
