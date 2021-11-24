@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PortfolioList from '../portfolio-list/portfolio-list';
 import './portfolio.scss';
-import { useEffect, useState } from 'react';
 
 export default function Portfolio() {
 
