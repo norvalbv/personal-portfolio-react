@@ -16,7 +16,7 @@ export default function ContactPopUp() {
                     <br />
                     <p className="formParagraph">If you any questions, please feel free to contact me.</p>
                     <hr />
-                    <button id="btnClose" onClick={() => setContactOpen(!contactOpen)}>x</button>
+                    <button id="btnClose" onClick={click}>x</button>
                     <div class="inputContainer">
                         <h3>Name</h3>
                         <div className="name">
