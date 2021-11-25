@@ -135,6 +135,8 @@ a:visited, a:link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh !important;
+  position: relative;
 }
 
 .portfolio h2 {
@@ -143,7 +145,8 @@ a:visited, a:link {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  position: absolute;
+  top: 3rem;
 }
 
 .portfolio .work-type {
@@ -153,6 +156,10 @@ a:visited, a:link {
   gap: 2rem;
   font-size: 0.75rem;
   margin-bottom: 1rem;
+}
+
+.portfolio .work-type .active {
+  color: #72d865;
 }
 
 .portfolio .work-container {
@@ -193,10 +200,6 @@ a:visited, a:link {
 .portfolio .work-container > *:hover {
   opacity: 0.5;
   color: lightgray;
-}
-
-.active {
-  color: #000;
 }
 
 @media only screen and (max-width: 550px) {
