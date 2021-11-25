@@ -7,6 +7,7 @@
     justify-content: center;
     position: relative;
     background-color: #000;
+    overflow-y: hidden;
 }
 
 .aboutImage {
@@ -43,7 +44,7 @@
         margin: 7.5% auto 5%;
         max-width: 70%;
         color: $primary-light;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     button {
@@ -66,8 +67,12 @@
     }
 
     .aboutText {
-        margin-top: 10rem;
+        margin-top: 2rem;
         width: 100%;
+
+        p {
+            font-size: 12px;
+        }
     }
 
     .aboutMe {
@@ -86,8 +91,8 @@
     #overlayImage {
         border-radius: 15%;
         box-shadow: none;
-        margin: 0 auto;
-        width: 27.5%;
+        margin: 2rem auto;
+        width: 22.5%;
         display: block;
     }
 }

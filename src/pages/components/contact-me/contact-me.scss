@@ -7,7 +7,7 @@
     border-top: 1px solid $border;
     border-bottom: 1px solid $border;
     background-color: $primary-neutral-opacity;
-    height: 10rem !important;
+    height: calc(100vh - 80vh) !important;
 
     p {
         padding: 1rem;

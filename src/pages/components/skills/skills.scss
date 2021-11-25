@@ -2,9 +2,12 @@
 
 .skills {
     width: $default-width;
-    margin: 0 auto;
-    height: 80vh !important;
     position: relative;
+    height: calc(100vh - 27vh) !important;
+    width: 100%;
+    background-color: #000;
+    padding: 2rem;
+
 
     h2 {
         @include header2; 
@@ -12,7 +15,6 @@
     
     h2, p {
         text-align: left;
-        margin: 10px 0;
     }
     p {
         font-size: $secondary-paragraph-size;
@@ -22,7 +24,7 @@
 .skillsIcons ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 40px;
     align-items: center;
     margin: 30px 0;
 
@@ -47,7 +49,7 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 880px) {
     .skills {
         width: 100%;
         height: 98vh;
@@ -64,17 +66,28 @@
     }
 
     .more-to-come {
-        font-size: 12px;
-        position: absolute;
-        bottom: -1rem;
-        left: 37.5%;
+        // font-size: 12px;
+        // position: absolute;
+        // bottom: -1rem;
+        // left: 37.5%;
+        
+        // br {
+        //     display: none;
+        // }
     }
-    
 }
 
-@media only screen and (max-width: 400px) {
-    .skillsIcons ul li {
+@media only screen and (max-width: 600px) {
+
+    .skills {
+        height: 87.5vh !important;
+    }
+    .skillsIcons ul {
+        // background-color: aquamarine;
+
+        li {
         list-style-type: circle;
         margin: 0;
+        }
     }
 };
