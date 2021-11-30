@@ -1,0 +1,52 @@
+@import '../portfolio.scss';
+
+.portfolio-popup {
+    inset: 0;
+    margin: auto;
+    border-radius: 10px;
+    width: 75%;
+    height: 80% !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+    background-color: $primary-neutral-opacity;
+    color: $primary-light;
+
+    // button {
+    //     cursor: pointer;
+    //     background: none;
+    //     border: none;
+    //     font-size: 14px;
+    //     text-transform: uppercase;
+    //     color: $primary-light;
+    //     position: absolute;
+    //     top: 20px;
+    //     right: 25px;
+        
+    //     &:hover {
+    //         color: $secondary-clr-1;
+    //     }
+    // }
+
+    img {
+        height: 50%;
+    }
+
+    .text {
+        width: 80%;
+        text-align: center;
+        font-size: 12px;
+        padding: 1rem 0;
+
+        .dates {
+            padding: 1rem 0;
+            font-style: italic;
+        }
+
+        .link {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

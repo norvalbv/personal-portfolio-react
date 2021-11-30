@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PortfolioList from '../portfolio-list/portfolio-list';
 import './portfolio.scss';
 import { Coding, WorkExperience } from './data';
+import PortfolioPopUp from './portfolio-popup/portfolio-popup';
 // import { Work } from '@mui/icons-material';
 
 export default function Portfolio() {
@@ -20,18 +21,22 @@ export default function Portfolio() {
     }, [selected]);
 
     return (
-        <div className="portfolio flex" id="my-work">
-            <h2>My Work</h2>
-            <ul className="work-type">
-                {list.map(item => {
-                    return <PortfolioList title={item.title} 
-                    active={selected === item.id} 
-                    setSelected={setSelected}
-                    id={item.id}
-                    />
-                })}
-            </ul>
-            {data}
+        <div>
+            <div className="portfolio flex" id="my-work">
+            <PortfolioPopUp />
+                <h2>My Work</h2>
+                <ul className="work-type">
+                    {list.map(item => {
+                        return <PortfolioList title={item.title} 
+                        active={selected === item.id} 
+                        setSelected={setSelected}
+                        id={item.id}
+                        />
+                    })}
+                </ul>
+                {data}
+            </div>
         </div>
+
     )
 }
