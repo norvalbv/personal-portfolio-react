@@ -13,7 +13,7 @@ export default function Intro() {
             backSpeed: 60,
             backDelay: 1250,
             showCursor: true, 
-            strings: ['Front-end developer', 'Aspiring full-stack developer', 'Entrepreneur', 'Blockchain enthusiast'],
+            strings: ['Front end developer', 'Aspiring full stack developer', 'Entrepreneur', 'Blockchain enthusiast'],
         });
     }, []);
 

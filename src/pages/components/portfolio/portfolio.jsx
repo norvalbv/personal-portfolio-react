@@ -21,21 +21,19 @@ export default function Portfolio() {
     }, [selected]);
 
     return (
-        <div>
-            <div className="portfolio flex" id="my-work">
-            <PortfolioPopUp />
-                <h2>My Work</h2>
-                <ul className="work-type">
-                    {list.map(item => {
-                        return <PortfolioList title={item.title} 
-                        active={selected === item.id} 
-                        setSelected={setSelected}
-                        id={item.id}
-                        />
-                    })}
-                </ul>
-                {data}
-            </div>
+        <div className="portfolio flex" id="my-work">
+        <PortfolioPopUp />
+            <h2>My Work</h2>
+            <ul className="work-type">
+                {list.map(item => {
+                    return <PortfolioList title={item.title} 
+                    active={selected === item.id} 
+                    setSelected={setSelected}
+                    id={item.id}
+                    />
+                })}
+            </ul>
+            {data}
         </div>
 
     )

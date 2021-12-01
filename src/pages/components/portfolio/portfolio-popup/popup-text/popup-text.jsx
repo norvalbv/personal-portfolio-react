@@ -1,15 +1,18 @@
 import React from 'react';
-import './popup-text.scss';
+import '../portfolio-popup.scss';
 
-export default function PopupText({title, active, id, setSelected}) {
+export default function PopupText({title, src, alt, description, dates, link}) {
 
 
     return (
-        <div className="item-div">
-            <li className={active ? "work-type active" : "work-type"}
-                onClick={() => setSelected(id)}>
-                {title}
-            </li>
+        <div className="popup-text flex">
+            <h2>{title}</h2>
+            <img src={src} alt={alt} />
+            <div className="text">
+                <p className="description">{description}</p>
+                <p className="dates">{dates}</p>
+                <p className="link"><a href={link} target="_blank">{link}</a></p>
+            </div>
         </div>
     )
 }

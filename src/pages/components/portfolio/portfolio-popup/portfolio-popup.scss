@@ -1,47 +1,63 @@
 @import '../portfolio.scss';
 
 .portfolio-popup {
-    inset: 0;
-    margin: auto;
+    display: none !important;
+
+    .button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        text-transform: uppercase;
+        color: $primary-light;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        z-index: 6;
+        
+        &:hover {
+            color: $secondary-clr-1;
+        }
+    }
+
+    width: 60%;
+    height: 85%;
+    position: absolute;
+    background-color: $primary-dark;
+    box-shadow: 7px 7px 7px $primary-neutral;
+    border: 1px solid $primary-neutral;
     border-radius: 10px;
-    width: 75%;
-    height: 80% !important;
+    z-index: 5;
+}
+
+.popup-text {
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    z-index: 5;
-    background-color: $primary-neutral-opacity;
-    color: $primary-light;
+    flex-flow: column wrap;
+    gap: 2rem;
 
-    // button {
-    //     cursor: pointer;
-    //     background: none;
-    //     border: none;
-    //     font-size: 14px;
-    //     text-transform: uppercase;
-    //     color: $primary-light;
-    //     position: absolute;
-    //     top: 20px;
-    //     right: 25px;
-        
-    //     &:hover {
-    //         color: $secondary-clr-1;
-    //     }
-    // }
+    h2 {
+        position: absolute;
+        top: 2rem;
+        @include header2;
+    }
 
     img {
-        height: 50%;
+        position: relative;
+        top: 5rem;
+        height: 35vh;
+        box-shadow: 5px 5px 5px #222;
     }
 
     .text {
         width: 80%;
-        text-align: center;
+        position: relative;
+        top: 6rem;
         font-size: 12px;
-        padding: 1rem 0;
+        text-align: center;
 
         .dates {
-            padding: 1rem 0;
             font-style: italic;
+            padding: 1rem 0;
         }
 
         .link {
@@ -49,4 +65,8 @@
             cursor: pointer;
         }
     }
+}
+
+.active {
+    display: block !important;
 }
