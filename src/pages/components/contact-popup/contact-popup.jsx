@@ -1,22 +1,20 @@
 import './contact-popup.scss';
-import React, {useState} from 'react';
+import React from 'react';
 
-export default function ContactPopUp() {
-
-    const [contactOpen, setContactOpen] = useState(true);    
-
-    const click = () => setContactOpen(!contactOpen);
-    
+export default function ContactPopUp({ opencontact, contactOpen }) {
     return (
         <div>
-            <li onClick={click} className="nav-item">Contact</li>
-                <div className={contactOpen ? "formContainer" : "formContainer active"} id="formContainer">
+            <li onClick={opencontact} className="nav-item">Contact</li>
+                <div 
+                // className={contactOpen ? "formContainer active" : "formContainer"} 
+                className={"formContainer " + (contactOpen && "active")}
+                id="formContainer">
                 <form>
                     <h2>Contact Me</h2>
                     <br />
                     <p className="formParagraph">If you any questions, please feel free to contact me.</p>
                     <hr />
-                    <button id="btnClose" onClick={click}>x</button>
+                    <button id="btnClose" onClick={opencontact}>x</button>
                     <div class="inputContainer">
                         <h3>Name</h3>
                         <div className="name">

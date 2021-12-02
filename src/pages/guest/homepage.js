@@ -7,7 +7,7 @@ import Intro from "../components/intro/intro";
 import Portfolio from "../components/portfolio/portfolio";
 import Skills from "../components/skills/skills";
 import './homepage.scss';
-import ContactPopUp from "../components/contact-popup/contact-popup";
+// import ContactPopUp from "../components/contact-popup/contact-popup";
 
 const HomePage = () => {
 
@@ -15,7 +15,7 @@ const HomePage = () => {
     const openhamburger = () => setMenuOpen(!menuOpen);
 
     
-    const [contactOpen, setContactOpen] = useState(true);    
+    const [contactOpen, setContactOpen] = useState(false);    
     const opencontact = () => setContactOpen(!contactOpen);
     
 
@@ -24,6 +24,8 @@ const HomePage = () => {
             <NavBar 
             menuOpen={menuOpen} 
             openmenu={openhamburger}
+
+            contactOpen={contactOpen}
             opencontact={opencontact}
             />
             <div className="sections">
