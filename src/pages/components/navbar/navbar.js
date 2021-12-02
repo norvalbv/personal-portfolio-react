@@ -4,7 +4,7 @@ import pdfCV from '../../../files/benjamin-cv.pdf';
 import ContactPopUp from "../contact-popup/contact-popup.jsx";
 // import MenuIcon from '@mui/icons-material/Menu';
 
-const NavBar = ({ menuOpen, setMenuOpen}) => {
+const NavBar = ({openmenu, menuOpen, opencontact}) => {
     return (
         <div className="navbar">
             <div>
@@ -17,12 +17,12 @@ const NavBar = ({ menuOpen, setMenuOpen}) => {
                         <li className="nav-item"><a href="#about">About Me</a></li>
                         <li className="nav-item"><a href="#my-work">My Work</a></li>
                         <li className="nav-item"><a href="#skills">Skills</a></li>
-                        <ContactPopUp className="nav-item"/>
+                        <ContactPopUp className="nav-item" onClick={opencontact}/>
                         <li className="nav-item"><a href={pdfCV} target="_blank">Download CV</a></li>
                     </ul>
                 </div>
                 <div className="hamburger">
-                    <div className="icon" onClick={() => setMenuOpen(!menuOpen)}>
+                    <div className="icon" onClick={openmenu}>
                         {/* <MenuIcon /> */}
                         <span className="line1"></span>
                         <span className="line2"></span>
@@ -34,7 +34,7 @@ const NavBar = ({ menuOpen, setMenuOpen}) => {
                             <li className="hamburger-item"><a href="#about">About Me</a></li>
                             <li className="hamburger-item"><a href="#my-work">My Work</a></li>
                             <li className="hamburger-item"><a href="#skills">Skills</a></li>
-                            <ContactPopUp className="hamburger-item"/>
+                            <ContactPopUp className="hamburger-item" onClick={opencontact}/>
                             <li className="hamburger-item"><a href={pdfCV} target="_blank">Download CV</a></li>
                         </ul>
                     </div>

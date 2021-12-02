@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './portfolio-popup.scss';
-import Cyrus from './portfolio-data';
+import MyWork from './portfolio-data';
 import PopupText from './popup-text/popup-text';
 
 export default function PortfolioPopUp() {
 
-    const [content, setContent] = useState(Cyrus);
+    const [content, setContent] = useState(MyWork);
         // const [selected, setSelected] = useState([]);
 
 
@@ -15,7 +15,7 @@ export default function PortfolioPopUp() {
     return (
         <div className={opened ? "portfolio-popup active flex" : "portfolio-popup flex"}>
             <p className="button" onClick={click}>X</p>
-            {Cyrus.map(text => {
+            {MyWork.map(text => {
                 return <PopupText title={text.title} 
                 src={text.src}
                 alt={text.alt}

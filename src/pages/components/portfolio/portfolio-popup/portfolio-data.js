@@ -2,7 +2,7 @@ import cyrusSrc from '../../../../files/cyrus-clothing-cover.jpg';
 
 // Work experience
 
-const Cyrus = [
+const MyWork = [
         {
         className: 'cyrus-clothing',
         title: 'Cyrus Clothing',
@@ -23,19 +23,9 @@ const Cyrus = [
         // }
 ];
 
-export default Cyrus;
+export default MyWork;
 
-// export const Hotel = [ 
-//     { 
-//         className: 'hotel',
-//         title: 'Bartender and waiter',
-//         img: cyrusSrc,
-//         description: 'Working on social events upwards of 100 people per sitting, including, but not limited to, weddings, funerals, and birthdays.',
-//         dates: 'Dates: September 2016 - September 2019'
-//     }
-// ];
-
-// // Coding projects
+// Coding projects
 
 // export const PersonalPortfolio = [ 
 //         { 
@@ -46,10 +36,8 @@ export default Cyrus;
 //         dates: 'Dates: September 2016 - September 2019',
 //         demo: '#',
 //         github: 'https://www.github.com/norvalbv/personal-portfolio-react'
-//         }
-// ];
+//         },
 
-// export const SpaceProject = [ 
 //         { 
 //         className: 'portfolio',
 //         title: 'Personal Portfolio',
@@ -58,10 +46,8 @@ export default Cyrus;
 //         dates: 'Dates: September 2016 - September 2019',
 //         demo: '#',
 //         github: 'https://www.github.com/norvalbv/personal-portfolio-react'
-//         }
-// ];
+//         },
 
-// export const TimeTracker = [ 
 //         { 
 //         className: 'portfolio',
 //         title: 'Personal Portfolio',
