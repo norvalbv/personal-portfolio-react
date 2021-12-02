@@ -2,9 +2,9 @@
 @import '../navbar/navbar.scss';
 
 .formContainer {
-    background-color: $secondary-clr-3 !important;
+    background-color: $secondary-clr-3;
     width: 60%;
-    height: 90vh !important;
+    height: 90vh;
     inset: 0;
     margin: auto;
     padding: 10px;
@@ -116,12 +116,11 @@
 }
 
 .active {
-    display: block !important;
+    display: block;
 }
 
 @media only screen and (max-width: 800px) {
     .formContainer {
         width: 90%;
-        height: 100vh !important;
     }
 }
