@@ -7,7 +7,7 @@ import Intro from "../components/intro/intro";
 import Portfolio from "../components/portfolio/portfolio";
 import Skills from "../components/skills/skills";
 import './homepage.scss';
-// import ContactPopUp from "../components/contact-popup/contact-popup";
+
 
 const HomePage = () => {
 
@@ -29,7 +29,6 @@ const HomePage = () => {
             opencontact={opencontact}
             />
             <div className="sections">
-                {/* <ContactPopUp /> */}
                 <Intro />
                 <AboutMe />
                 <Portfolio />

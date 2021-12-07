@@ -7,6 +7,7 @@ import PortfolioPopUp from './portfolio-popup/portfolio-popup';
 
 export default function Portfolio() {
 
+    // Portfolio List
     const [selected, setSelected] = useState('coding-projects');    
 
     const list = [ 
@@ -19,6 +20,8 @@ export default function Portfolio() {
     useEffect(() => {
         selected === 'coding-projects' ? setData(Coding) : setData(WorkExperience);
     }, [selected]);
+
+    // Portfolio Popup
 
     return (
         <div className="portfolio flex" id="my-work">

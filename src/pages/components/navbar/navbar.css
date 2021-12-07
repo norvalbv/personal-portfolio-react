@@ -130,6 +130,8 @@ a:visited, a:link {
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(58, 58, 58, 0.3);
+  width: 100%;
+  z-index: 10000000 !important;
 }
 
 .navbar nav {

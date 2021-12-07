@@ -123,6 +123,8 @@ a:visited, a:link {
 
 .intro {
   height: calc( 100vh - 3rem) !important;
+  position: relative;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,6 +135,14 @@ a:visited, a:link {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
+}
+
+.intro .background {
+  width: 100%;
+  height: calc(100vh - 3rem);
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .intro .text {
@@ -150,6 +160,7 @@ a:visited, a:link {
           justify-content: center;
   text-align: center;
   gap: 1rem;
+  position: absolute;
 }
 
 .intro .text h1 {

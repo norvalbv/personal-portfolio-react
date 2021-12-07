@@ -1,18 +1,17 @@
 import React from 'react';
 import '../portfolio-popup.scss';
 
-export default function PopupText({title, src, alt, description, dates, link}) {
-
+export default function PopupText({items}) {
 
     return (
         <div className="popup-text flex">
-            <h2>{title}</h2>
-            <img src={src} alt={alt} />
+            <h2>{items.title}</h2>
+            <img src={items.src} alt={items.alt} />
             <div className="text">
-                <p className="description">{description}</p>
-                <p className="dates">{dates}</p>
-                <p className="link"><a href={link} target="_blank">{link}</a></p>
+                <p className="description">{items.desc}</p>
+                <p className="dates">{items.dates}</p>
+                <p className="link"><a href={items.link} target="_blank">{items.link}</a></p>
             </div>
         </div>
     )
-}
+};

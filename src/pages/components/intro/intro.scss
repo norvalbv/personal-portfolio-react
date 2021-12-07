@@ -2,10 +2,21 @@
 
 .intro {
     height: calc( 100vh - 3rem) !important;
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+
+    .background {
+        // background-color: #fff;
+        width: 100%;
+        height: calc(100vh - 3rem);
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 
     .text {
         width: 60%;
@@ -15,6 +26,7 @@
         justify-content: center;
         text-align: center;
         gap: 1rem;
+        position: absolute;
 
         h1 {
             font-size: 1.15rem;

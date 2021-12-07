@@ -5,8 +5,28 @@ import PopupText from './popup-text/popup-text';
 
 export default function PortfolioPopUp() {
 
-    const [content, setContent] = useState(MyWork);
+    // const [content, setContent] = useState(MyWork);
         // const [selected, setSelected] = useState([]);
+
+
+
+    // const [active, setActive] = useState(MyWork[0]);
+
+    // active selects the correct index and passes it to the map function
+
+    // Map then passes it to the component as a attribute
+
+
+    const items = MyWork.map(item => ({ 
+        title: item.title,
+        src: item.src,
+        alt: item.alt,
+        desc: item.description,
+        dates: item.dates,
+        link: item.link}
+    ));
+
+    // console.log(items);
 
 
     const [opened, setOpened] = useState(true);
@@ -15,15 +35,13 @@ export default function PortfolioPopUp() {
     return (
         <div className={opened ? "portfolio-popup active flex" : "portfolio-popup flex"}>
             <p className="button" onClick={click}>X</p>
-            {MyWork.map(text => {
-                return <PopupText title={text.title} 
-                src={text.src}
-                alt={text.alt}
-                description={text.description}
-                dates={text.dates}
-                link={text.link}
-                />
+            {/* <PopupText items={items} /> */}
+            {MyWork.map(items => {
+                return <PopupText items={items}/>
             })}
+                        {/* {MyWork.map(items => {
+                return <PopupText items={items}/>
+            })} */}
         </div>
     )
 }

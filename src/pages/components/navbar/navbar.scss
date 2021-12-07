@@ -6,6 +6,15 @@
     display: flex;
     align-items: center;
     background-color: $primary-neutral-opacity;
+    width: 100%;
+    z-index: 10000000 !important;
+    // height: calc( 100vh - 3rem) !important;
+    // position: relative;
+    // width: 100%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // text-transform: uppercase;
     
     nav {
         position: absolute;
