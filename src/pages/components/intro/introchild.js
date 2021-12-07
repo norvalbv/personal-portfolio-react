@@ -83,7 +83,8 @@ export default function IntroChild() {
                 },
                 },
                 fullScreen: {
-                    enable: false,
+                    enable: true,
+                    zIndex: -1,
                 },
                 polygon: {
                     draw: { enable: true, lineColor: "#ffffff", lineWidth: 0.5 },

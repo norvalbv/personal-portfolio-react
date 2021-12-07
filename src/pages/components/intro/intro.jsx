@@ -27,5 +27,24 @@ export default function Intro() {
                 from the United Kingdom</h2>
             </div>  
         </div>
+//             <div className="intro">
+//                 <Parallax
+//                     className="text"
+//                     offsetYMax={700}
+//                     offsetYMin={-170}
+//                     offsetXMax={-330}
+//                     offsetXMin={330}
+//                 >
+//                     <span className="h1">Hello</span>
+//                 </Parallax>
+//                 <Parallax
+//                     className="background"
+//                     offsetYMax={35}
+//                     offsetYMin={-35}
+//                 >
+//                     <h2>A 22 year old <span ref={textRef}></span>  </h2>
+//                 </Parallax>
+//             </div>
+//         //  /* </div> */
     )
 }
