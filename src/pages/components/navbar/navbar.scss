@@ -7,13 +7,6 @@
     align-items: center;
     background-color: $primary-neutral;
     width: 100%;
-    // height: calc( 100vh - 3rem) !important;
-    // position: relative;
-    // width: 100%;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // text-transform: uppercase;
     
     nav {
         position: absolute;
@@ -36,7 +29,6 @@
                 // CSS not working on anchor tags.
                 // CSS Transition Is Stopped In Universal CSS
                 &:hover {
-                    // padding-bottom: 5px;
                     border-bottom: solid;
                     color: $secondary-clr-1;
                 }
@@ -72,6 +64,7 @@
         position: relative;
         right: 0;
         top: 0;
+        z-index: 5;
         
         .icon {
             position: relative;
