@@ -1,13 +1,9 @@
 @import '../../universal-styling.scss';
 
 .aboutMe {
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    background-color: #000;
-    overflow-y: hidden;
+    height: 100vh;
 }
 
 .aboutImage {
@@ -67,8 +63,7 @@
     }
 
     .aboutText {
-        margin-top: 2rem;
-        width: 100%;
+        margin-top: 7rem;
 
         p {
             font-size: 12px;

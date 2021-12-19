@@ -22,38 +22,39 @@ const MyWork = [
         }
 ];
 
-export default MyWork;
 
 // Coding projects
 
-// export const PersonalPortfolio = [ 
-//         { 
-//         className: 'portfolio',
-//         title: 'Personal Portfolio',
-//         img: cyrusSrc,
-//         description: 'Working on social events upwards of 100 people per sitting, including, but not limited to, weddings, funerals, and birthdays.',
-//         dates: 'Dates: September 2016 - September 2019',
-//         demo: '#',
-//         github: 'https://www.github.com/norvalbv/personal-portfolio-react'
-//         },
+const codingProjects = [ 
+        { 
+        className: 'portfolio',
+        title: 'Personal Portfolio',
+        img: cyrusSrc,
+        description: 'Working on social events upwards of 100 people per sitting, including, but not limited to, weddings, funerals, and birthdays.',
+        dates: 'Dates: September 2016 - September 2019',
+        demo: '#',
+        github: 'https://www.github.com/norvalbv/personal-portfolio-react'
+        },
 
-//         { 
-//         className: 'portfolio',
-//         title: 'Personal Portfolio',
-//         img: cyrusSrc,
-//         description: 'Working on social events upwards of 100 people per sitting, including, but not limited to, weddings, funerals, and birthdays.',
-//         dates: 'Dates: September 2016 - September 2019',
-//         demo: '#',
-//         github: 'https://www.github.com/norvalbv/personal-portfolio-react'
-//         },
+        { 
+        className: 'portfolio',
+        title: 'Personal Portfolio',
+        img: cyrusSrc,
+        description: 'Working on social events upwards of 100 people per sitting, including, but not limited to, weddings, funerals, and birthdays.',
+        dates: 'Dates: September 2016 - September 2019',
+        demo: '#',
+        github: 'https://www.github.com/norvalbv/personal-portfolio-react'
+        },
 
-//         { 
-//         className: 'portfolio',
-//         title: 'Personal Portfolio',
-//         img: cyrusSrc,
-//         description: 'Working on social events upwards of 100 people per sitting, including, but not limited to, weddings, funerals, and birthdays.',
-//         dates: 'Dates: September 2016 - September 2019',
-//         demo: '#',
-//         github: 'https://www.github.com/norvalbv/personal-portfolio-react'
-//         }
-// ];
+        { 
+        className: 'portfolio',
+        title: 'Personal Portfolio',
+        img: cyrusSrc,
+        description: 'Working on social events upwards of 100 people per sitting, including, but not limited to, weddings, funerals, and birthdays.',
+        dates: 'Dates: September 2016 - September 2019',
+        demo: '#',
+        github: 'https://www.github.com/norvalbv/personal-portfolio-react'
+        }
+];
+
+export {MyWork, codingProjects}

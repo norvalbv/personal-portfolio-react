@@ -1,30 +1,28 @@
 import React, { useState } from 'react';
 import './portfolio-popup.scss';
-import MyWork from './portfolio-data';
+import {MyWork, codingProjects} from './portfolio-data';
 import PopupText from './popup-text/popup-text';
 
 export default function PortfolioPopUp() {
 
-    // const [content, setContent] = useState(MyWork);
-        // const [selected, setSelected] = useState([]);
-
+    // const [content, setContent] = useState(MyWork[0]);
 
 
     // const [active, setActive] = useState(MyWork[0]);
 
-    // active selects the correct index and passes it to the map function
+    // // active selects the correct index and passes it to the map function
 
-    // Map then passes it to the component as a attribute
+    // // Map then passes it to the component as a attribute
 
 
-    const items = MyWork.map(item => ({ 
-        title: item.title,
-        src: item.src,
-        alt: item.alt,
-        desc: item.description,
-        dates: item.dates,
-        link: item.link}
-    ));
+    // const items = content.map(item => ({ 
+    //     title: item.title,
+    //     src: item.src,
+    //     alt: item.alt,
+    //     desc: item.description,
+    //     dates: item.dates,
+    //     link: item.link
+    // }));
 
     // console.log(items);
 
@@ -35,10 +33,11 @@ export default function PortfolioPopUp() {
     return (
         <div className={opened ? "portfolio-popup active flex" : "portfolio-popup flex"}>
             <p className="button" onClick={click}>X</p>
-            {/* <PopupText items={items} /> */}
-            {MyWork.map(items => {
+
+            <PopupText items={MyWork} />
+            {/* {MyWork.map(items => {
                 return <PopupText items={items}/>
-            })}
+            })} */}
                         {/* {MyWork.map(items => {
                 return <PopupText items={items}/>
             })} */}

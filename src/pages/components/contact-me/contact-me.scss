@@ -7,7 +7,7 @@
     border-top: 1px solid $border;
     border-bottom: 1px solid $border;
     background-color: $primary-neutral-opacity;
-    height: calc(100vh - 80vh) !important;
+    height: calc(100vh - 80vh);
 
     p {
         padding: 1rem;
@@ -34,6 +34,36 @@
     
         .primary-btn2 {
             background-color: $secondary-clr-2;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-me {
+        height: auto;
+        flex-flow: column nowrap;
+
+        p {
+            text-align: center;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid $primary-light;
+        }
+
+        div {
+            .primary-btn1, .primary-btn2 {
+                width: 7.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .contact-me {
+        div {
+            align-items: center;
+            flex-direction: column;
+            gap: 2.5rem;
         }
     }
 }

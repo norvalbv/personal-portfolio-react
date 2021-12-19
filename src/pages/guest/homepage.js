@@ -31,8 +31,8 @@ const HomePage = () => {
             <div className="sections">
                 <Intro />
                 <AboutMe />
-                <Portfolio />
-                <Skills />
+                {/*<Portfolio />
+                <Skills /> */}
                 <ContactMe opencontact={opencontact}/>
                 <Footer />
             </div>

@@ -2,7 +2,6 @@ import React from "react";
 import './navbar.scss';
 import pdfCV from '../../../files/benjamin-cv.pdf';
 import ContactPopUp from "../contact-popup/contact-popup.jsx";
-// import MenuIcon from '@mui/icons-material/Menu';
 
 const NavBar = ({openmenu, menuOpen, opencontact, contactOpen}) => {
     return (
@@ -23,7 +22,6 @@ const NavBar = ({openmenu, menuOpen, opencontact, contactOpen}) => {
                 </div>
                 <div className="hamburger">
                     <div className="icon" onClick={openmenu}>
-                        {/* <MenuIcon /> */}
                         <span className="line1"></span>
                         <span className="line2"></span>
                         <span className="line3"></span>

@@ -130,8 +130,8 @@ a:visited, a:link {
   padding: 5rem 2rem;
   border-top: 1px solid rgba(179, 179, 179, 0.25);
   border-bottom: 1px solid rgba(179, 179, 179, 0.25);
-  background-color: rgba(58, 58, 58, 0.3);
-  height: calc(100vh - 80vh) !important;
+  background-color: #121212;
+  height: calc(100vh - 80vh);
 }
 
 .contact-me p {
@@ -162,5 +162,37 @@ a:visited, a:link {
 
 .contact-me div .primary-btn2 {
   background-color: #72d865;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-me {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .contact-me p {
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid lightgray;
+  }
+  .contact-me div .primary-btn1, .contact-me div .primary-btn2 {
+    width: 7.5rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .contact-me div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2.5rem;
+  }
 }
 /*# sourceMappingURL=contact-me.css.map */

@@ -1,9 +1,9 @@
 @import '../../universal-styling.scss';
 
 .intro {
-    height: calc( 100vh - 3rem) !important;
     position: relative;
-    width: 100%;
+    top: 3rem;
+    height: calc(100vh - 3rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,14 +18,12 @@
     }
 
     .text {
-        width: 60%;
-        height: 50%;
+        z-index: 1;
         display: flex;
         flex-flow: column nowrap;
-        justify-content: center;
         text-align: center;
         gap: 1rem;
-        position: absolute;
+        margin-top: 32.5vh;
 
         h1 {
             font-size: 1.15rem;

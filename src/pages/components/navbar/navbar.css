@@ -131,6 +131,8 @@ a:visited, a:link {
           align-items: center;
   background-color: #121212;
   width: 100%;
+  position: fixed;
+  z-index: 10;
 }
 
 .navbar nav {

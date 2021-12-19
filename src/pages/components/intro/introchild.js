@@ -83,7 +83,7 @@ export default function IntroChild() {
                 },
                 },
                 fullScreen: {
-                    enable: true,
+                    enable: false,
                     zIndex: -1,
                 },
                 polygon: {
