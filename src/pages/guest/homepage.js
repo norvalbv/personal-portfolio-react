@@ -4,9 +4,10 @@ import ContactMe from "../components/contact-me/contact-me";
 import Footer from "../components/footer/footer";
 import NavBar from "../components/navbar/navbar";
 import Intro from "../components/intro/intro";
-import Portfolio from "../components/portfolio/portfolio";
 import Skills from "../components/skills/skills";
 import './homepage.scss';
+import Portfolio from "../components/portfolio/portfolio";
+import MyWork from "../components/mywork/mywork";
 
 
 const HomePage = () => {
@@ -21,7 +22,8 @@ const HomePage = () => {
 
     return (
         <div className="app">
-            <NavBar 
+            <MyWork />
+            {/* <NavBar 
             menuOpen={menuOpen} 
             openmenu={openhamburger}
 
@@ -31,11 +33,10 @@ const HomePage = () => {
             <div className="sections">
                 <Intro />
                 <AboutMe />
-                {/*<Portfolio />
-                <Skills /> */}
+                <Skills />
                 <ContactMe opencontact={opencontact}/>
                 <Footer />
-            </div>
+            </div> */}
         </div>
     )
 }

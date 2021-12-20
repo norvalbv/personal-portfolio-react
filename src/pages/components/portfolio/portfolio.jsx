@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PortfolioList from '../portfolio-list/portfolio-list';
 import './portfolio.scss';
-import { Coding, WorkExperience } from './data';
-import PortfolioPopUp from './portfolio-popup/portfolio-popup';
-// import { Work } from '@mui/icons-material';
-import { MyWork, codingProjects } from './portfolio-popup/portfolio-data';
-import New from './new';
+import {Coding, WorkExperience} from './data';
 
 export default function Portfolio() {
 
@@ -17,21 +13,14 @@ export default function Portfolio() {
         { id: 'work-experience', title: "Work Experience"}
     ];
 
-    const [data, setData] = useState(MyWork);
+    const [data, setData] = useState(Coding);
 
     useEffect(() => {
-        selected === 'coding-projects' ? setData(MyWork) : setData(codingProjects);
+        selected === 'coding-projects' ? setData(Coding) : setData(WorkExperience);
     }, [selected]);
-
-    // Portfolio Popup
-
-    // const live = [
-
-    // ]
 
     return (
         <div className="portfolio flex" id="my-work">
-        {/* <PortfolioPopUp /> */}
             <h2>My Work</h2>
             <ul className="work-type">
                 {list.map(item => {
@@ -42,10 +31,7 @@ export default function Portfolio() {
                     />
                 })}
             </ul>
-            {/* {data} */}
-            {data.map(items => {
-                return <New items={items}/>
-            })}
+            {data}
         </div>
 
     )

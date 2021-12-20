@@ -3,14 +3,13 @@
 .contact-me {
     align-items: center;
     justify-content: space-around;
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
     border-top: 1px solid $border;
     border-bottom: 1px solid $border;
     background-color: $primary-neutral-opacity;
     height: calc(100vh - 80vh);
 
     p {
-        padding: 1rem;
         font-size: 14px;
     }
     
@@ -40,7 +39,7 @@
 
 @media only screen and (max-width: 600px) {
     .contact-me {
-        height: auto;
+        height: 20rem;
         flex-flow: column nowrap;
 
         p {

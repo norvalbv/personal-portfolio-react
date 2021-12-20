@@ -156,7 +156,6 @@ a:visited, a:link {
           flex-flow: column nowrap;
   text-align: center;
   gap: 1rem;
-  margin-top: 32.5vh;
 }
 
 .intro .text h1 {
