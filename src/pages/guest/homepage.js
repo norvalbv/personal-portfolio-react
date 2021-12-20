@@ -22,8 +22,7 @@ const HomePage = () => {
 
     return (
         <div className="app">
-            <MyWork />
-            {/* <NavBar 
+            <NavBar 
             menuOpen={menuOpen} 
             openmenu={openhamburger}
 
@@ -33,10 +32,11 @@ const HomePage = () => {
             <div className="sections">
                 <Intro />
                 <AboutMe />
+                <MyWork />
                 <Skills />
                 <ContactMe opencontact={opencontact}/>
                 <Footer />
-            </div> */}
+            </div>
         </div>
     )
 }

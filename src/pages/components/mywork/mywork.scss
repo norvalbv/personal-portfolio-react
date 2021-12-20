@@ -45,12 +45,20 @@
             background-color: $primary-light;
             border: none;
 
+            a {
+                color: inherit;
+            }
 
             &:hover {
                 background-color: $primary-neutral-opacity;
                 color: $primary-light;
                 border: 1px solid $border;
             }
+        }
+
+        .link {
+            font-size: 13px;
+            letter-spacing: 1px;
         }
     }
 
@@ -77,6 +85,16 @@
                 box-shadow: none;
             }
         }
+    }
+}
+
+.work-type {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+
+    .active {
+        color: $secondary-clr-2;
     }
 }
 

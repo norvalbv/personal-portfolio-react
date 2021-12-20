@@ -9,7 +9,7 @@ export default function MyWork() {
 
     const list = [ 
         { id: 'coding-projects', title: "Coding Projects"},
-        { id: 'work-experience', title: "Work Experience"}
+        { id: 'work-experience', title: "Employement History"}
     ];
 
     const [data, setData] = useState(Coding);
