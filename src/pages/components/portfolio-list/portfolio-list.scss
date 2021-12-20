@@ -7,13 +7,21 @@
         padding: 0.4rem 1.2rem;
         font-size: 13px;
         cursor: pointer;
-        background-color: $primary-neutral-opacity;
+        background-color: $primary-neutral;
         border-radius: 10px;
         color: #fff;
     
         &:hover {
             color: $secondary-clr-2;
             opacity: 0.75;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .item-div {
+        li {
+            width: 15rem;
         }
     }
 }

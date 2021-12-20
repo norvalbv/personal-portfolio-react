@@ -236,4 +236,10 @@ a:visited, a:link {
   color: #72d865;
   opacity: 0.75;
 }
+
+@media only screen and (max-width: 800px) {
+  .item-div li {
+    width: 15rem;
+  }
+}
 /*# sourceMappingURL=portfolio-list.css.map */
