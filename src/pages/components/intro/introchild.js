@@ -67,9 +67,9 @@ export default function IntroChild() {
                 number: {
                     density: {
                     enable: true,
-                    value_area: 800,
+                    value_area: 1000,
                     },
-                    value: 150,
+                    value: 100,
                 },
                 opacity: {
                     value: 0.7,

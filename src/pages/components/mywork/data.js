@@ -3,6 +3,7 @@ import ipTracker from '../../../files/ip-tracker-screenshot.png';
 import timeTracker from '../../../files/time-tracker-screenshot.png';
 import glenYrAfon from '../../../files/glen-yr-afon.jpg';
 import personalPortfolio from '../../../files/personal-portfolio-screenshot.png';
+import ecommerce from '../../../files/landingpage.png';
 import html from '../../../files/html.png';
 import css from '../../../files/css.png';
 import sass from '../../../files/4375465_logo_sass_icon.png';
@@ -62,8 +63,27 @@ export const Coding = () => {
                     <div className="icons">
                         <p>Technologies used:</p>
                         <img src={html} alt="HTML Icon" />
-                        <img src={css} alt="Sass Icon" />
+                        <img src={sass} alt="Sass Icon" />
                         <img src={jsIcon} alt="JS Icon" />
+                    </div>
+                </div>
+            </div>
+
+            <div className="item">
+                <div className="left">
+                    <h3>E-Commerce site</h3>
+                    <p>I built a front end e-commerce site which was built with React and MUI</p>
+                    <button>Check Live Demo</button>
+                    <button><a href="https://github.com/norvalbv/ecommerce" target="_blank">Source Code</a></button>
+                </div>
+                <div className="right">
+                    <img src={ecommerce} alt="Time Tracker Screenshot" />
+                    <div className="icons">
+                        <p>Technologies used:</p>
+                        <img src={html} alt="HTML Icon" />
+                        <img src={sass} alt="Sass Icon" />
+                        <img src={jsIcon} alt="JS Icon" />
+                        <img src={reactIcon} alt="React Icon" />
                     </div>
                 </div>
             </div>
