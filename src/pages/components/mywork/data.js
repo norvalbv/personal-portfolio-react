@@ -73,7 +73,7 @@ export const Coding = () => {
                 <div className="left">
                     <h3>E-Commerce site</h3>
                     <p>An ongoing e-commerce project built with React and MUI.</p>
-                    <button><a href="https://benjamin.ecommerce.demo.netifly.app" target="_blank">Check Live Demo</a></button>
+                    <button><a href="https://benjamin-ecommerce-demo.netlify.app/" target="_blank">Check Live Demo</a></button>
                     <button><a href="https://github.com/norvalbv/ecommerce" target="_blank">Read more</a></button>
                 </div>
                 <div className="right">

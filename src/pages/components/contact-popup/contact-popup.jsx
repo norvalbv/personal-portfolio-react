@@ -4,7 +4,7 @@ import React from 'react';
 export default function ContactPopUp({ opencontact, contactOpen }) {
     return (
         <div className={"formContainer " + (contactOpen && "active")}id="formContainer">
-            <form>
+            <form action="https://formsubmit.co/benjinorval@gmail.com" method="POST">
                 <h2>Contact Me</h2>
                 <br />
                 <p className="formParagraph">If you any questions, please feel free to contact me.</p>
