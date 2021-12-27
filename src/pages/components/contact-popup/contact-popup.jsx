@@ -28,6 +28,7 @@ export default function ContactPopUp({ opencontact, contactOpen }) {
                     <input type="text" id="email" required />
                     <br />
                     <h3>Send me a message</h3>
+                    <input type="text" name="_subject" placeholder='Subject' id="subject"></input>
                     <textarea placeholder="Send me a message!" required />
                     <input type="submit" id="submit" />
                 </div>

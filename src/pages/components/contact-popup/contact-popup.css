@@ -486,6 +486,11 @@ a:visited, a:link {
   display: block;
 }
 
+#subject {
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
 @media only screen and (max-width: 800px) {
   .formContainer {
     width: 90%;
