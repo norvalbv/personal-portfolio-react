@@ -251,7 +251,7 @@ a:visited, a:link {
     -webkit-transform: rotate(0);
             transform: rotate(0);
     right: 40%;
-    bottom: 3.5rem;
+    bottom: 2.75rem;
   }
   .intro .scroll-down p {
     -webkit-animation: upAndDown 1.5s infinite;

@@ -153,15 +153,9 @@ a:visited, a:link {
   }
   .hamburger {
     display: block;
-    position: relative;
-    right: 0;
-    top: 0;
-    z-index: 5;
   }
   .hamburger .icon {
-    position: relative;
     right: 1rem;
-    z-index: 10;
     width: 1.75rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -178,7 +172,7 @@ a:visited, a:link {
     height: 2px;
     background-color: lightgray;
   }
-  .hamburger .hamburger-menu ul, .hamburger .active ul {
+  .hamburger .hamburger-menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -189,20 +183,19 @@ a:visited, a:link {
     gap: 0.75rem;
     margin: 1rem 1rem 0;
   }
-  .hamburger .hamburger-menu ul li, .hamburger .active ul li {
+  .hamburger .hamburger-menu ul li {
     font-size: 1rem;
     cursor: pointer;
   }
-  .hamburger .hamburger-menu.active, .hamburger .active.active {
+  .hamburger .hamburger-menu.active {
     border-top: 1px solid rgba(179, 179, 179, 0.25);
     display: block;
-    height: 50vh;
+    height: 40vh;
     width: 30vh;
     background-color: #121212;
     border: 1px solid #000;
     position: absolute;
-    top: 2rem;
-    left: 0;
+    top: 3rem;
   }
 }
 
