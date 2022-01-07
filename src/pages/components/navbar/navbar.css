@@ -61,21 +61,21 @@ table {
 
 /* Animation reset */
 * {
-  /*CSS transitions*/
-  -webkit-transition-property: none !important;
-  transition-property: none !important;
-  /*CSS transforms*/
-  -webkit-transform: none !important;
-  transform: none !important;
-  /*CSS animations*/
-  -webkit-animation: none !important;
-  animation: none !important;
-}
-
-* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+html {
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+  /* For Chrome, Safari, and Opera */
 }
 
 body {
@@ -91,34 +91,10 @@ a:visited, a:link {
 }
 
 /* Utility Classes */
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.grid {
-  display: -ms-grid;
-  display: grid;
-}
-
 .container {
   padding-inline: 2em;
   margin-inline: auto;
   max-width: 80rem;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  /* added line */
-  border: 0;
 }
 
 .navbar {
@@ -129,27 +105,16 @@ a:visited, a:link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #121212;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000;
+  border-bottom: 1px solid rgba(179, 179, 179, 0.25);
   width: 100%;
-  position: fixed;
   z-index: 10;
-}
-
-.navbar nav {
-  position: absolute;
-  right: 0;
-}
-
-.navbar nav .mainNav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbar nav .mainNav ul {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .navbar nav .mainNav li {
@@ -231,12 +196,13 @@ a:visited, a:link {
   .hamburger .hamburger-menu.active, .hamburger .active.active {
     border-top: 1px solid rgba(179, 179, 179, 0.25);
     display: block;
-    height: calc( 100vh - 3rem);
+    height: 50vh;
     width: 30vh;
     background-color: #121212;
+    border: 1px solid #000;
     position: absolute;
     top: 2rem;
-    right: 0;
+    left: 0;
   }
 }
 

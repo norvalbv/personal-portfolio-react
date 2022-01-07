@@ -5,7 +5,6 @@ import Footer from "../components/footer/footer";
 import NavBar from "../components/navbar/navbar";
 import Intro from "../components/intro/intro";
 import Skills from "../components/skills/skills";
-import './homepage.scss';
 import Portfolio from "../components/portfolio/portfolio";
 import MyWork from "../components/mywork/mywork";
 
@@ -22,6 +21,7 @@ const HomePage = () => {
 
     return (
         <div className="app">
+            <Intro />
             <NavBar 
             menuOpen={menuOpen} 
             openmenu={openhamburger}
@@ -29,14 +29,11 @@ const HomePage = () => {
             contactOpen={contactOpen}
             opencontact={opencontact}
             />
-            <div className="sections">
-                <Intro />
-                <AboutMe />
-                <MyWork />
-                <Skills />
-                <ContactMe opencontact={opencontact}/>
-                <Footer />
-            </div>
+            <AboutMe />
+            <MyWork />
+            <Skills />
+            <ContactMe opencontact={opencontact}/>
+            <Footer />
         </div>
     )
 }

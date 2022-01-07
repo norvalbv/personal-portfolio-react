@@ -121,6 +121,18 @@ a:visited, a:link {
   border: 0;
 }
 
+html {
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+  /* For Chrome, Safari, and Opera */
+}
+
 .myWork {
   text-align: center;
   color: lightgray;

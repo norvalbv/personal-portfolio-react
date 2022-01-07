@@ -1,10 +1,28 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './intro.scss';
 import { init } from 'ityped'
 import IntroChild from './introchild';
-import { Parallax } from 'react-scroll-parallax';
+// import fog from 'vanta/dist/vanta.fog.min';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 export default function Intro() {
+
+    // const [vantaEffect, setVantaEffect] = useState(0);
+
+    // const myRef = useRef(null);
+
+    // useEffect(() => {
+    //     if (!vantaEffect) {
+    //       setVantaEffect(fog({
+    //         el: myRef.current
+    //       }))
+    //     }
+    //     return () => {
+    //       if (vantaEffect) vantaEffect.destroy()
+    //     }
+    //   }, [vantaEffect])
+
     const textRef = useRef();
     
     useEffect(() => {
@@ -21,30 +39,21 @@ export default function Intro() {
         <div className="intro">
             <IntroChild />
             <div className="text">
-                <h1>Benjamin Norval</h1>
-                <h2>A 22 year old <span ref={textRef}></span> 
+                <h1>Hello.
+                    <br />
+                    I am Benjamin</h1>
+                <h2>A 22 year old
+                <br />
+                <span ref={textRef}></span> 
                 <br />
                 from the United Kingdom</h2>
-            </div>  
+            </div>
+            
+            <div className="scroll-down">
+                <p>Scroll Down</p>
+                <ArrowForwardIcon fontSize='small' id="arr-forward" />
+                <ArrowDownwardIcon fontSize='small' id="arr-down" />
+            </div>
         </div>
-//             <div className="intro">
-//                 <Parallax
-//                     className="text"
-//                     offsetYMax={700}
-//                     offsetYMin={-170}
-//                     offsetXMax={-330}
-//                     offsetXMin={330}
-//                 >
-//                     <span className="h1">Hello</span>
-//                 </Parallax>
-//                 <Parallax
-//                     className="background"
-//                     offsetYMax={35}
-//                     offsetYMin={-35}
-//                 >
-//                     <h2>A 22 year old <span ref={textRef}></span>  </h2>
-//                 </Parallax>
-//             </div>
-//         //  /* </div> */
     )
 }

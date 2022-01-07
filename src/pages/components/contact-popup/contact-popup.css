@@ -122,6 +122,18 @@ a:visited, a:link {
   border: 0;
 }
 
+html {
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+  /* For Chrome, Safari, and Opera */
+}
+
 /* colours */
 /* Edits */
 /* Text */
@@ -244,6 +256,18 @@ a:visited, a:link {
   border: 0;
 }
 
+html {
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+  /* For Chrome, Safari, and Opera */
+}
+
 .navbar {
   height: 3rem;
   display: -webkit-box;
@@ -254,8 +278,9 @@ a:visited, a:link {
           align-items: center;
   background-color: #121212;
   width: 100%;
-  position: fixed;
   z-index: 10;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .navbar nav {

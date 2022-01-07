@@ -4,7 +4,7 @@ import './footer.scss';
 const Footer = () => {
     return (
         <footer>
-            <div className="flex top">
+            <div className="top">
                 <div class="left">
                     <h4>Let's connect</h4>
                     <ul>

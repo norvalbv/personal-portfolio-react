@@ -1,25 +1,20 @@
 @import '../../universal-styling.scss';
 
-
 .navbar {
     height: 3rem;
     display: flex;
     align-items: center;
-    background-color: $primary-neutral;
+    justify-content: center;
+    background-color: #000;
+    border-bottom: 1px solid $border;
     width: 100%;
-    position: fixed;
     z-index: 10;
+    position: sticky;
+    top: 0;
     
     nav {
-        position: absolute;
-        right: 0;
 
         .mainNav {
-            align-items: center;
-            
-            ul {
-                align-items: center;
-            }
 
             li {
                 display: inline-block;
@@ -102,15 +97,15 @@
             &.active {
                 border-top: 1px solid $border;
                 display: block;
-                height: calc( 100vh - 3rem);
+                height: 50vh;
                 width: 30vh;
                 background-color: #121212;
+                border: 1px solid $primary-dark;
                 position: absolute;
                 top: 2rem;
     
                 // why is it top 2rem?
-    
-                right: 0;
+                left: 0;
             }
         }
     }

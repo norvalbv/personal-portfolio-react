@@ -76,32 +76,41 @@ table {
 
 /* Animation reset */
 
-* {
-    /*CSS transitions*/
-    -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    /*CSS transforms*/
-    -o-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations*/
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-}
+// * {
+//     /*CSS transitions*/
+//     -o-transition-property: none !important;
+//     -moz-transition-property: none !important;
+//     -ms-transition-property: none !important;
+//     -webkit-transition-property: none !important;
+//     transition-property: none !important;
+//     /*CSS transforms*/
+//     -o-transform: none !important;
+//     -moz-transform: none !important;
+//     -ms-transform: none !important;
+//     -webkit-transform: none !important;
+//     transform: none !important;
+//     /*CSS animations*/
+//     -webkit-animation: none !important;
+//     -moz-animation: none !important;
+//     -o-animation: none !important;
+//     -ms-animation: none !important;
+//     animation: none !important;
+// }
 
 // Universal Styles
 
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+html {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar {
+    width: 0; /* For Chrome, Safari, and Opera */
 }
 
 body {
@@ -118,31 +127,10 @@ a:visited, a:link {
 
 /* Utility Classes */
 
-
-.flex {
-    display: flex;
-}
-
-.grid {
-    display: grid;
-}
-
 .container {
     padding-inline: 2em;
     margin-inline: auto;
     max-width: 80rem;
-}
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap; /* added line */
-    border: 0;
 }
 
 // Mixins //

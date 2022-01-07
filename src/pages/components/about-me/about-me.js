@@ -12,13 +12,14 @@ const AboutMe = () => {
             </div>
             <div className="aboutText">
                 <h2>About Me</h2>
-                <p>I have a passion for business, computer science, programming and surrounding subjects, enforced by the achievement of first-class honours in (BA) Entrepreneurship and Business Management degree.
+                <p>I am a junior front end developer from Wales, United Kingdom.
                 <br />
                 <br />
-                I sole founded my first company within the apparel niche of 2018 enabling real-time learning with key skills, such as sales, business development and e-commerce; later selling in 2021.
+                After obtaining my First Class Honours in my business degree at The University of Reading I picked up a liking for programming and have been coding ever since!
                 <br />
                 <br />
-                I am a driven, confident, and quick learner looking to utilise my skills and passion within the business sector.</p>
+                I am currently learning full stack development
+                </p>
                 <button><a href={pdfCV} target="_blank">Download my CV</a></button>
             </div>
         </div>

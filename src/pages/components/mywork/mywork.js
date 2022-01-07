@@ -21,7 +21,7 @@ export default function MyWork() {
     return (
         <div className='myWork'>
             <h2>My Work</h2>
-            <ul className="work-type">
+            {/* <ul className="work-type">
                 {list.map(item => {
                     return <PortfolioList title={item.title} 
                     active={selected === item.id} 
@@ -29,7 +29,7 @@ export default function MyWork() {
                     id={item.id}
                     />
                 })}
-            </ul>
+            </ul> */}
             {data}
         </div>
     )

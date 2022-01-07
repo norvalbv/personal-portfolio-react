@@ -12,6 +12,7 @@ footer {
     color: $primary-light;
 
     .top {
+        display: flex;
         border-bottom: 1px solid $border;
         padding: 1rem 0;
     }

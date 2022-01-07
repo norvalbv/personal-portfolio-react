@@ -6,12 +6,9 @@ import ContactPopUp from "../contact-popup/contact-popup.jsx";
 const NavBar = ({openmenu, menuOpen, opencontact, contactOpen}) => {
     return (
         <div className="navbar">
-            <div>
-                <h6 id="logo">BN</h6>
-            </div>
             <nav>
                 <div className="mainNav">
-                    <ul className="flex">
+                    <ul>
                         <li className="nav-item"><a href="/">Home</a></li>
                         <li className="nav-item"><a href="#about">About Me</a></li>
                         <li className="nav-item"><a href="#my-work">My Work</a></li>
