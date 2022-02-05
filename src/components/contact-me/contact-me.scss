@@ -1,0 +1,70 @@
+@import "../../index.scss";
+
+.contact-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  background-color: $primary-neutral;
+  height: calc(100vh - 80vh);
+
+  p {
+    font-size: 14px;
+  }
+
+  div {
+    display: flex;
+
+    button {
+      height: 40px;
+      border: none;
+      border-radius: 5%;
+      cursor: pointer;
+      width: 8rem;
+      color: #fff;
+      margin: 0 1rem;
+    }
+
+    .primary-btn1 {
+      background-color: $secondary-clr-1;
+      width: 7rem;
+    }
+
+    .primary-btn2 {
+      background-color: $secondary-clr-2;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-me {
+    height: 20rem;
+    flex-flow: column nowrap;
+
+    p {
+      text-align: center;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid $primary-light;
+    }
+
+    div {
+      .primary-btn1,
+      .primary-btn2 {
+        width: 7.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .contact-me {
+    div {
+      align-items: center;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import "../../index.scss";
+
+footer {
+  background-color: $primary-neutral;
+  bottom: 0;
+  font-weight: lighter;
+  text-transform: uppercase;
+  height: 320px;
+  text-align: center;
+  font-size: 12px !important;
+  border-top: solid 1px $border;
+  color: $primary-light;
+
+  .top {
+    display: flex;
+    border-bottom: 1px solid $border;
+    padding: 1rem 0;
+  }
+
+  h4 {
+    margin: 5%;
+    letter-spacing: 2px;
+  }
+
+  ul li {
+    margin: 2%;
+    display: block;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+      opacity: 0.5;
+    }
+  }
+
+  p {
+    margin: 1rem auto;
+    font-size: 11px;
+    text-transform: capitalize;
+  }
+
+  .email {
+    font-size: 10px;
+    text-transform: none;
+  }
+}
+
+.left,
+.right {
+  width: 49.5%;
+  height: 100%;
+}
+
+#contact-me {
+  color: inherit;
+}
+
+@media only screen and (max-width: 500px) {
+  footer {
+    height: 400px;
+
+    .top {
+      padding: 3rem 0;
+    }
+
+    .flex {
+      flex-direction: column;
+    }
+
+    .left,
+    .right {
+      width: 100%;
+      height: auto;
+      margin: 1rem 0 0;
+
+      h4 {
+        text-decoration: underline;
+      }
+    }
+  }
+}

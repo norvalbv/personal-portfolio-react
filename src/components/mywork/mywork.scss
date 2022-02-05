@@ -1,0 +1,168 @@
+@import "../../index.scss";
+
+.myWork {
+  text-align: center;
+  color: $primary-light;
+
+  h2 {
+    @include header2;
+  }
+}
+
+.item-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.item {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid $primary-light;
+
+  .left {
+    flex: 1;
+
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    button {
+      padding: 0.75rem;
+      margin: 0 2rem 0 0;
+      width: 9rem;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      background-color: $primary-light;
+      border: none;
+
+      a {
+        color: inherit;
+      }
+
+      &:hover {
+        background-color: $primary-neutral;
+        color: $primary-light;
+        border: 1px solid $border;
+      }
+    }
+
+    .link {
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .right {
+    flex: 1;
+    text-align: center;
+
+    img {
+      width: 50%;
+      border-radius: 5px;
+      box-shadow: 3px 3px 6px rgb(60, 60, 60);
+    }
+
+    .icons {
+      p {
+        font-size: 12px;
+      }
+
+      img {
+        filter: invert(100%);
+        width: 1.5rem;
+        margin: 0.5rem 0.4rem;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.work-type {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+
+  .active {
+    color: $secondary-clr-2;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .item {
+    .left {
+      button {
+        font-size: 10px;
+        padding: 0.75rem 0.5rem;
+        margin: 0 1rem 0 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .item {
+    .left {
+      text-align: center;
+
+      button {
+        margin: 1rem auto;
+        display: block;
+      }
+    }
+  }
+}
+
+.work-type {
+  margin: 2rem 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .item-container {
+    width: 80%;
+  }
+  .item {
+    flex-direction: column;
+    gap: 1rem;
+
+    .left {
+      width: inherit;
+
+      button {
+        display: inline;
+        margin: 0 1rem;
+        padding: 0.5rem 0;
+      }
+    }
+
+    .right {
+      width: inherit;
+    }
+  }
+
+  .work-type {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .item {
+    .left {
+      button {
+        margin: 1rem auto;
+        display: block;
+      }
+    }
+  }
+}

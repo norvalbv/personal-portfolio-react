@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* colours */
+/* Edits */
+/* Text */
+/* Resets */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Animation reset */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+  /* For Chrome, Safari, and Opera */
+}
+
+body {
+  background-color: #000;
+  color: #d8d8d8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+a:visited, a:link {
+  text-decoration: none;
+  color: #ddd;
+}
+
+/* Utility Classes */
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.skills {
+  width: 80%;
+  margin: 5rem auto;
+}
+
+.skills h2 {
+  color: #ffa0c7;
+  letter-spacing: 5px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.skills h2, .skills p {
+  text-align: left;
+}
+
+.skills p {
+  font-size: 1rem;
+}
+
+.skills-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0;
+}
+
+.skills-icons ul li {
+  list-style-type: none;
+  max-width: 150px;
+  margin: 15px 10px 15px 0;
+}
+
+.skills-icons ul li span {
+  margin-left: 10px;
+}
+
+.skills-icons ul li img {
+  max-width: 30%;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.skills-icons ul li img:hover {
+  -webkit-filter: invert(74%) sepia(30%) saturate(826%) hue-rotate(295deg) brightness(101%) contrast(102%);
+          filter: invert(74%) sepia(30%) saturate(826%) hue-rotate(295deg) brightness(101%) contrast(102%);
+}
+
+@media only screen and (max-width: 880px) {
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 5rem;
+  }
+  .skills ul li img {
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills {
+    height: auto !important;
+  }
+  .skills .skills-icons ul {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=skills.css.map */
