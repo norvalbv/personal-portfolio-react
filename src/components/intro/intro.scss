@@ -75,6 +75,11 @@
   }
 }
 
+#typed {
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
 .scroll-down {
   font-size: 0.75rem;
   position: absolute;
@@ -154,6 +159,7 @@ h2 span:hover {
   .intro {
     align-items: center;
     padding: 5%;
+    margin-top: -2.5rem;
 
     .text {
       h1 {

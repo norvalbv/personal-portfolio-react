@@ -5,7 +5,8 @@ import NavBar from "./components/navbar/navbar.jsx";
 import AboutMe from "./components/about-me/about-me.jsx";
 import ContactMe from "./components/contact-me/contact-me.jsx";
 import Skills from "./components/skills/skills.jsx";
-import MyWork from "./components/mywork/mywork.jsx";
+import MyWork from "./components/mywork/featuredprojects/mywork.jsx";
+import MoreProjects from "./components/mywork/moreprojects/moreprojects.jsx";
 import Footer from "./components/footer/footer.jsx";
 
 const HomePage = () => {
@@ -17,7 +18,7 @@ const HomePage = () => {
 
   return (
     <div className="app">
-      {/* <Intro /> */}
+      <Intro />
       <NavBar
         menuOpen={menuOpen}
         openmenu={openhamburger}
@@ -26,6 +27,7 @@ const HomePage = () => {
       />
       <AboutMe />
       <MyWork />
+      <MoreProjects />
       <Skills />
       <ContactMe opencontact={opencontact} />
       <Footer openContant={opencontact}/>

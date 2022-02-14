@@ -1,143 +1,92 @@
 @import "../../index.scss";
 
 .skills {
-    width: $default-width;
-    margin: 5rem auto;
+  width: $default-width;
+  margin: 5rem auto;
 
-    h2 {
-        @include header2;
-    }
+  h2 {
+    @include header2;
+  }
 
-    h2, p {
-        text-align: left;
-    }
-    p {
-        font-size: $secondary-paragraph-size;
-    }
+  h2,
+  p {
+    text-align: left;
+  }
+  p {
+    font-size: $secondary-paragraph-size;
+  }
 }
 
 .skills-icons ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    align-items: center;
-    margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 0;
 
-    li {
-        list-style-type: none;
-        max-width: 150px;
-        margin: 15px 10px 15px 0;
+  li {
+    list-style-type: none;
+    max-width: 150px;
+    margin: 1rem 0.75rem 1rem 0;
 
-        span {
-            margin-left: 10px;
-        }
-
-        img {
-            max-width: 30%;
-            filter: invert(100%);
-            transition: 0.25s;
-
-            &:hover {
-                filter: invert(74%) sepia(30%) saturate(826%) hue-rotate(295deg) brightness(101%) contrast(102%);
-            }
-        }
+    span {
+      margin-left: 10px;
     }
+
+    img {
+      max-width: 30%;
+      filter: invert(100%);
+      transition: 0.25s;
+
+      &:hover {
+        filter: invert(74%) sepia(30%) saturate(826%) hue-rotate(295deg)
+          brightness(101%) contrast(102%);
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 880px) {
-    .skills {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-        ul {
-            display: flex;
-            justify-content: center;
-            padding-left: 5rem;
+    ul {
+      display: flex;
+      justify-content: center;
+      padding-left: 5rem;
 
-            li {
-                img {
-                    max-width: 20%;
-                }
-            }
+      li {
+        img {
+          max-width: 20%;
         }
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .skills {
+    height: auto !important;
 
-    .skills {
-        height: auto !important;
-
-        .skills-icons ul {
-            padding: 0;
-        }
+    .skills-icons ul {
+      padding: 0;
+      li {
+        margin: 0;
     }
+    }
+  }
 }
 
-// .skills {
-//   text-align: center;
-//   // color: $heading1-clr;
-//   border-bottom: 1px solid;
-//   padding-bottom: 2rem;
-//   margin: 3rem auto;
-
-//   h2 {
-//     margin-bottom: 3rem;
-//     font-size: 2rem;
-//   }
-// }
-
-// .flex-container {
-//   margin: 0 auto;
-//   width: 85%;
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   gap: 3.5rem;
-// }
-
-// .frontend,
-// .backend,
-// .other {
-//   border: 1px solid;
-//   border-radius: 2.5%;
-//   width: 275px;
-//   height: 325px;
-//   box-shadow: -5px 5px 10px rgb(44, 44, 44);
-
-//   .development-title {
-//     font-size: 1.25rem;
-//     margin: 0.75rem 0;
-//     border-bottom: 1px solid white;
-//     padding-bottom: 0.25rem;
-//   }
-// }
-
-//   .service-text-area {
-//     width: 80%;
-//     inset: 0;
-//     margin: auto;
-
-//     img {
-//       border-radius: 50%;
-//       width: 4rem;
-//       margin: 1rem 0;
-//     }
-
-//     p {
-//       // font-size: $paragraph-fs;
-//       // color: $paragraph-clr;
-//       margin-bottom: 0.75rem;
-//     }
-
-//     a {
-//       font-size: 0.75rem;
-//       // color: $learn-more-btn-clr;
-//       &:hover {
-//         // color: $primary2;
-//       }
-//     }
-//   }
-// }
+@media only screen and (max-width: 450px) {
+    .skills {
+      width: 100%;
+  
+      .skills-icons ul {
+        padding: 0;
+      }
+    }
+  }

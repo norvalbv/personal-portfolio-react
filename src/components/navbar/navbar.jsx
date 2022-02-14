@@ -17,7 +17,6 @@ const NavBar = ({ openmenu, menuOpen, opencontact, contactOpen }) => {
             <li className="nav-item">
               <a href="#my-work">My Work</a>
             </li>
-            {/* <li className="nav-item"><a href="#skills">Skills</a></li> */}
             <li onClick={opencontact}>Contact</li>
             <li className="nav-item">
               <a href={pdfCV} target="_blank" rel="noopener noreferrer">
@@ -43,7 +42,6 @@ const NavBar = ({ openmenu, menuOpen, opencontact, contactOpen }) => {
               <li className="hamburger-item">
                 <a href="#my-work">My Work</a>
               </li>
-              {/* <li className="hamburger-item"><a href="#skills">Skills</a></li> */}
               <li onClick={opencontact}>Contact</li>
               <li className="hamburger-item">
                 <a href={pdfCV} target="_blank" rel="noopener noreferrer">

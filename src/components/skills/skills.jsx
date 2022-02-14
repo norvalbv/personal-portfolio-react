@@ -42,7 +42,7 @@ const Skills = () => {
       <div className="skills-icons">
         <ul>
           {itemList.map((item) => (
-            <li key={imgSources.indexOf(item)}>
+            <li key={itemList.indexOf(item)}>
               <img
                 src={imgSources[itemList.indexOf(item)]}
                 alt={`${item} Icon`}
@@ -54,47 +54,13 @@ const Skills = () => {
       </div>
       <div>
         <p className="more-to-come">
-          More to come...
+          More to come... (currently learning Jest, Node and Express)
           <br />
           <br />
-          Including backend technologies :)
+          Including more backend technologies :)
         </p>
       </div>
     </div>
-
-    // <div className="skills" id="skills">
-    //   <h2>My skills</h2>
-    //   <div className="flex-container">
-    //     <div className="frontend">
-    //       <h3 className="development-title">Front end</h3>
-    //       <ul>
-    //         <li>HTML</li>
-    //         <li>CSS</li>
-    //         <li>Sass/Scss</li>
-    //         <li>Bootstrap</li>
-    //         <li>React</li>
-    //         <li>Redix</li>
-    //       </ul>
-    //     </div>
-    //     <div className="backend">
-    //       <h3 className="development-title">Back end</h3>
-    //       <ul>
-    //         <li>Node JS</li>
-    //         <li>Express</li>
-    //         <li>More being learnt</li>
-    //       </ul>
-    //     </div>
-    //     <div className="other">
-    //       <h3 className="development-title">Other</h3>
-    //       <ul>
-    //         <li>Jest</li>
-    //         <li>Git</li>
-    //         <li>GitHub</li>
-    //         <li>Figma</li>
-    //       </ul>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 
