@@ -181,11 +181,6 @@
       box-shadow: none;
       position: absolute;
       top: 0;
-      z-index: 2;
-
-      &:hover {
-        opacity: 0;
-      }
     }
   }
 
@@ -198,6 +193,12 @@
     top: 0;
     align-items: center;
     text-align: center;
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+
 
     .featured-project {
       display: none;
@@ -244,19 +245,3 @@
     color: $secondary-clr-2;
   }
 }
-
-// @media only screen and (max-width: 375px) {
-//   .flex-leftside-portfolio {
-//     position: relative;
-
-//     .project-title {
-//       position: absolute;
-//       top: 0;
-//       opacity: 0;
-
-//       &:hover {
-//         opacity: 1;
-//       }
-//     }
-//   }
-// }

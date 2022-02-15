@@ -277,10 +277,6 @@ a:visited, a:link {
             box-shadow: none;
     position: absolute;
     top: 0;
-    z-index: 2;
-  }
-  .flex-rightside-portfolio .project-screenshot:hover {
-    opacity: 0;
   }
   .flex-leftside-portfolio {
     z-index: 1;
@@ -293,6 +289,10 @@ a:visited, a:link {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    opacity: 0;
+  }
+  .flex-leftside-portfolio:hover {
+    opacity: 1;
   }
   .flex-leftside-portfolio .featured-project {
     display: none;
