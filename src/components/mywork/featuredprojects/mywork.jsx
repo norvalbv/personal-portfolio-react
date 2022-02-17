@@ -33,10 +33,9 @@ export default function MyWork() {
             <h4 className="project-title">Rock Paper Scissors Game</h4>
             <div className="project-desc-wrap">
               <p className="project-desc">
-                A Rock Paper Scissors game built with React and Redux. The
+                A Rock Paper Scissors game built with React. The
                 project build has tested my CSS animations and understanding and
-                also utilising Redux as a state management to manage complex
-                states and passing props.
+                also understanding of managing complex states.
               </p>
               <div className="more-info">
                 <button className="more-info-button">
