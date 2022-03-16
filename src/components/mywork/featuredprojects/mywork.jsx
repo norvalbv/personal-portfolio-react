@@ -23,37 +23,37 @@ export default function MyWork() {
         <div className="item">
           <div className="flex-rightside-portfolio">
             <img
-              src={rockPaperScissors}
-              alt="Rock Paper Scissors"
+              src={interactiveCommentSection}
+              alt="Interactive Comment Section screenshot"
               className="project-screenshot"
             />
           </div>
           <div className="flex-leftside-portfolio second">
             <h3 className="featured-project">Featured Project</h3>
-            <h4 className="project-title">Rock Paper Scissors Game</h4>
+            <h4 className="project-title">Todo app</h4>
             <div className="project-desc-wrap">
-              <p className="project-desc">
-                A Rock Paper Scissors game built with React. The
-                project build has tested my CSS animations and understanding and
-                also understanding of managing complex states.
+              <p>
+                A full stack to-do application using the PERN stack. This
+                application has recently been updated from client-side only to
+                now be full stack.
               </p>
               <div className="more-info">
                 <button className="more-info-button">
                   <a
-                    href="https://rock-paper-scissors-app-demo.herokuapp.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Check Live Demo
-                  </a>
-                </button>
-                <button className="more-info-button">
-                  <a
-                    href="https://github.com/norvalbv/rock-paper-scissors"
+                    href="https://github.com/norvalbv/todo-app-pern-stack"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Read more
+                  </a>
+                </button>
+                <button className="more-info-button">
+                  <a
+                    href="https://todo-application-demo.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Live Demo
                   </a>
                 </button>
               </div>
@@ -64,7 +64,9 @@ export default function MyWork() {
                 <li>SASS</li>
                 <li>JavaScript</li>
                 <li>React</li>
-                <li>Redux</li>
+                <li>Express</li>
+                <li>Node</li>
+                <li>PostgreSQL</li>
               </ul>
             </div>
           </div>
@@ -118,39 +120,41 @@ export default function MyWork() {
             />
           </div>
         </div>
+
         <div className="item">
           <div className="flex-rightside-portfolio">
             <img
-              src={interactiveCommentSection}
-              alt="Interactive Comment Section screenshot"
+              src={rockPaperScissors}
+              alt="Rock Paper Scissors"
               className="project-screenshot"
             />
           </div>
           <div className="flex-leftside-portfolio second">
             <h3 className="featured-project">Featured Project</h3>
-            <h4 className="project-title">Todo app</h4>
+            <h4 className="project-title">Rock Paper Scissors Game</h4>
             <div className="project-desc-wrap">
-              <p>
-                A to-do application built with React using functional components
-                and React Hooks
+              <p className="project-desc">
+                A Rock Paper Scissors game built with React. The project build
+                has tested my CSS animations and understanding and also
+                understanding of managing complex states.
               </p>
               <div className="more-info">
                 <button className="more-info-button">
                   <a
-                    href="https://github.com/norvalbv/todo-app"
+                    href="https://rock-paper-scissors-app-demo.herokuapp.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Read more
+                    Check Live Demo
                   </a>
                 </button>
                 <button className="more-info-button">
                   <a
-                    href="https://todo-application-demo.herokuapp.com/"
+                    href="https://github.com/norvalbv/rock-paper-scissors"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View Live Demo
+                    Read more
                   </a>
                 </button>
               </div>
@@ -161,6 +165,7 @@ export default function MyWork() {
                 <li>SASS</li>
                 <li>JavaScript</li>
                 <li>React</li>
+                <li>Redux</li>
               </ul>
             </div>
           </div>
