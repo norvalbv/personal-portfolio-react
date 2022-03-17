@@ -49,7 +49,7 @@ export default function MyWork() {
                 </button>
                 <button className="more-info-button">
                   <a
-                    href="https://todo-application-demo.herokuapp.com/"
+                    href="https://todo-application-using-pern.herokuapp.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

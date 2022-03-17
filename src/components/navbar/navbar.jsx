@@ -1,5 +1,5 @@
 import "./navbar.scss";
-import pdfCV from "../../files/other/benjamin-cv.pdf";
+import pdfCV from "../../files/other/benjamin-norval-cv.pdf";
 import ContactPopUp from "../contact-popup/contact-popup.jsx";
 
 const NavBar = ({ openmenu, menuOpen, opencontact, contactOpen }) => {
