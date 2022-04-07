@@ -53,7 +53,7 @@ a:link {
 
 .portfolio {
   background-color: #121212;
-  background-image: radial-gradient(at 0% 100%, #292929 0, transparent 50%), radial-gradient(at 25% 50%, #1b1b32 0, transparent 50%), radial-gradient(at 50% 50%, #1b1b32 0, transparent 50%);
+  background-image: radial-gradient(at 0% 100%, #292929 0, transparent 50%), radial-gradient(at 50% 40%, #1b1b32 0, transparent 25%), radial-gradient(at 50% 50%, #1b1b32 0, transparent 60%);
 }
 
 .navbar {

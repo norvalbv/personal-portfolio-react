@@ -1,95 +1,27 @@
 @import "../../index.scss";
+@import "../landing/landing.scss";
 
-.intro {
-  height: 100vh;
+#welcome {
+  height: calc(100vh - 3rem);
   display: flex;
-  align-items: flex-end;
-  padding: 10%;
-  text-transform: uppercase;
-
-  .background {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  .text {
-    z-index: 1;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 2rem;
-
-    h1 {
-      font-size: 5rem;
-      font-weight: 600;
-      letter-spacing: 2px;
-    }
-
-    h2 {
-      font-size: 1rem;
-      line-height: 2;
-
-      span {
-        color: $secondary-clr-2;
-
-        .ityped-cursor {
-          -webkit-animation: blink 1s infinite;
-          -moz-animation: blink 1s infinite;
-          animation: blink 1s infinite;
-          animation-direction: alternate;
-        }
-
-        @keyframes blink {
-          50% {
-            opacity: 1;
-          }
-
-          100% {
-            opacity: 0;
-          }
-        }
-
-        @-webkit-keyframes blink {
-          50% {
-            opacity: 1;
-          }
-
-          100% {
-            opacity: 0;
-          }
-        }
-
-        @-moz-keyframes blink {
-          50% {
-            opacity: 1;
-          }
-
-          100% {
-            opacity: 0;
-          }
-        }
-      }
-    }
-  }
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
-#typed {
-  letter-spacing: 2px;
-  font-weight: 400;
+.intro-title {
+  font-size: 3rem;
+  letter-spacing: 5px;
 }
 
-.scroll-down {
+.scroll {
   font-size: 1rem;
   position: absolute;
-  right: 0.5rem;
-  bottom: 2.5rem;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  bottom: .5rem;
   cursor: pointer;
-  display: flex;
-  gap: 0.5rem;
-  display: flex;
+  gap: 0.25rem;
   align-items: center;
 
   &:hover {
@@ -97,135 +29,22 @@
   }
 
   p {
-    animation: upAndDown 1.5s infinite;
+    animation: knowmore 1.5s infinite;
     position: relative;
   }
 }
 
-#arr-forward {
-  display: block;
-}
-
-#arr-down {
-  display: none;
-}
-
-h1 span,
-h2 span {
-  transition: color 1.5s;
-  transition-delay: 1s;
-  letter-spacing: -0.2vw;
-}
-
-h1 span:hover,
-h2 span:hover {
-  transition: color 0s;
-}
-
-.a:hover,
-.b:hover,
-.c:hover,
-.d:hover,
-.e:hover {
-  cursor: pointer;
-}
-
-.a:hover {
-  color: gold;
-}
-
-.b:hover {
-  color: pink;
-}
-
-.c:hover {
-  color: gray;
-}
-
-.d:hover {
-  color: lightblue;
-}
-
-.e:hover {
-  color: lightcoral;
-}
-
-.f:hover {
-  color: lightseagreen;
-}
-
-@keyframes upAndDown {
+@keyframes knowmore {
   0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateX(-25px);
-    transform: translateX(-25px);
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px);
   }
   100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .intro {
-    align-items: center;
-    padding: 5%;
-    margin-top: -2.5rem;
-
-    .text {
-      h1 {
-        font-size: 4rem;
-      }
-    }
-
-    .scroll-down {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transform: rotate(0);
-      right: 40%;
-      bottom: 2.75rem;
-
-      p {
-        animation: upAndDown 1.5s infinite;
-        position: relative;
-      }
-    }
-  }
-
-  #arr-forward {
-    display: none;
-  }
-
-  #arr-down {
-    display: block;
-  }
-
-  @keyframes upAndDown {
-    0% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-    50% {
-      -webkit-transform: translateY(-25px);
-      transform: translateY(-25px);
-    }
-    100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  .intro {
-    .text {
-      h1 {
-        font-size: 3rem;
-      }
-    }
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }

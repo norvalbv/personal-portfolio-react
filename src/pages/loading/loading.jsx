@@ -1,4 +1,4 @@
-import IntroChild from "../../components/intro/introchild";
+import IntroChild from "../../components/landing/landingchild";
 import "./loading.scss";
 
 export default function Loading() {
