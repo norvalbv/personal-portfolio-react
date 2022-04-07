@@ -10,12 +10,6 @@
   padding: 0;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
 ol, ul {
   list-style: none;
 }
@@ -37,7 +31,7 @@ html::-webkit-scrollbar {
 }
 
 body {
-  background-color: #000;
+  background-color: #121212;
   color: #d8d8d8;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -103,10 +97,10 @@ a:visited, a:link {
 }
 
 .intro .text h2 span .ityped-cursor {
-  -webkit-animation: blink 1s infinite !important;
-  animation: blink 1s infinite !important;
-  -webkit-animation-direction: alternate !important;
-          animation-direction: alternate !important;
+  -webkit-animation: blink 1s infinite;
+  animation: blink 1s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 @keyframes blink {
@@ -133,17 +127,24 @@ a:visited, a:link {
 }
 
 .scroll-down {
-  font-size: 0.75rem;
+  font-size: 1rem;
   position: absolute;
   right: 0.5rem;
-  bottom: 5rem;
+  bottom: 2.5rem;
   z-index: 1;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 0.5rem;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scroll-down:hover {
+  text-decoration: underline;
 }
 
 .scroll-down p {
@@ -173,6 +174,14 @@ h1 span:hover,
 h2 span:hover {
   -webkit-transition: color 0s;
   transition: color 0s;
+}
+
+.a:hover,
+.b:hover,
+.c:hover,
+.d:hover,
+.e:hover {
+  cursor: pointer;
 }
 
 .a:hover {

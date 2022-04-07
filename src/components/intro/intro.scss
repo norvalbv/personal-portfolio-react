@@ -35,10 +35,10 @@
         color: $secondary-clr-2;
 
         .ityped-cursor {
-          -webkit-animation: blink 1s infinite !important;
-          -moz-animation: blink 1s infinite !important;
-          animation: blink 1s infinite !important;
-          animation-direction: alternate !important;
+          -webkit-animation: blink 1s infinite;
+          -moz-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+          animation-direction: alternate;
         }
 
         @keyframes blink {
@@ -81,14 +81,20 @@
 }
 
 .scroll-down {
-  font-size: 0.75rem;
+  font-size: 1rem;
   position: absolute;
   right: 0.5rem;
-  bottom: 5rem;
+  bottom: 2.5rem;
   z-index: 1;
-  transform: rotate(90deg);
+  cursor: pointer;
   display: flex;
   gap: 0.5rem;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    text-decoration: underline;
+  }
 
   p {
     animation: upAndDown 1.5s infinite;
@@ -114,6 +120,14 @@ h2 span {
 h1 span:hover,
 h2 span:hover {
   transition: color 0s;
+}
+
+.a:hover,
+.b:hover,
+.c:hover,
+.d:hover,
+.e:hover {
+  cursor: pointer;
 }
 
 .a:hover {

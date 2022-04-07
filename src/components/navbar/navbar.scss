@@ -5,12 +5,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000;
+  background-color: hsla(0, 0, 0, 0.5);
   border-bottom: 1px solid $border;
   width: 100%;
   z-index: 10;
   position: sticky;
-  top: 0;
+  top: 0.25rem;
+
+  &::before {
+    width: 100%;
+    height: 0.25rem;
+    background: linear-gradient(to right, $secondary-clr-1, $secondary-clr-2);
+    position: absolute;
+    top: -0.25rem;
+    content: "";
+  }
 
   nav {
     .mainNav {

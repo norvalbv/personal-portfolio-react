@@ -1,12 +1,13 @@
 @import "../../index.scss";
 
-.aboutMe {
+#about {
   display: flex;
   align-items: center;
-  height: 100vh;
+  margin: 1rem 0;
+  height: calc(100vh - 3rem);
 }
 
-.aboutImage {
+.about-image {
   flex-basis: 100%;
   display: grid;
   grid-template: repeat(16, 1fr) / repeat(16, 1fr);
@@ -27,7 +28,7 @@
   }
 }
 
-.aboutText {
+.about-text {
   text-align: center;
   width: 100%;
   flex-basis: 100%;
@@ -37,7 +38,7 @@
   }
 
   p {
-    margin: 7.5% auto 5%;
+    margin: 6% auto 4%;
     max-width: 70%;
     color: $primary-light;
     font-size: 14px;
@@ -56,24 +57,21 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .aboutImage {
-    display: static;
+  #about {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    height: auto;
   }
 
-  .aboutText {
-    margin-top: 7rem;
+  .about-text {
+    margin-top: 3rem;
 
     p {
       font-size: 12px;
     }
   }
 
-  .aboutMe {
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-  }
-
-  .aboutImage {
+  .about-image {
     display: inline-block;
   }
 
@@ -82,10 +80,10 @@
   }
 
   #overlayImage {
-    border-radius: 15%;
+    border-radius: 20px;
     box-shadow: none;
     margin: 2rem auto;
-    width: 22.5%;
+    width: 30%;
     display: block;
   }
 }

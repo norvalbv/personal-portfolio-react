@@ -8,9 +8,6 @@ export default function IntroChild() {
         id="tsparticles"
         className="background"
         options={{
-          background: {
-            color: "#000",
-          },
           fpsLimit: 60,
           interactivity: {
             detect_on: "canvas",
@@ -45,8 +42,8 @@ export default function IntroChild() {
               color: "#ffffff",
               distance: 150,
               enable: true,
-              opacity: 0.5,
-              width: 1,
+              opacity: 0.6,
+              width: 0.75,
             },
             collisions: {
               enable: true,
@@ -58,7 +55,7 @@ export default function IntroChild() {
               enable: true,
               out_mode: "out",
               random: false,
-              speed: 2,
+              speed: 1,
               straight: false,
             },
             number: {
@@ -69,7 +66,7 @@ export default function IntroChild() {
               value: 100,
             },
             opacity: {
-              value: 0.7,
+              value: 1,
             },
             shape: {
               type: "circle",
@@ -80,8 +77,7 @@ export default function IntroChild() {
             },
           },
           fullScreen: {
-            enable: false,
-            zIndex: -1,
+            enable: true,
           },
           polygon: {
             draw: { enable: true, lineColor: "#ffffff", lineWidth: 0.5 },

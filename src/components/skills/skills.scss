@@ -1,9 +1,7 @@
 @import "../../index.scss";
 
-.skills {
-  width: $default-width;
+#skills {
   margin: 0 auto;
-  position: relative;
   display: flex;
   height: 30rem;
 
@@ -15,7 +13,8 @@
   }
 }
 
-.skills-text {
+#skills-text-container {
+  padding: 0 5rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -29,13 +28,13 @@
   }
 }
 
-.drop-container {
+#drop-container {
   position: relative;
   overflow: hidden;
   flex: 1;
 }
 
-.drop-container div {
+#drop-container div {
   position: absolute;
   display: block;
   text-transform: uppercase;
@@ -45,84 +44,99 @@
   letter-spacing: 2px;
 }
 
-.drop-container div:nth-child(1) {
+#drop-container div:nth-child(1) {
   animation: fall 15s linear infinite;
   animation-delay: -2s;
 }
 
-.drop-container div:nth-child(2) {
+#drop-container div:nth-child(2) {
   left: 10%;
   animation: fall 15s linear infinite;
   animation-delay: -4s;
 }
-.drop-container div:nth-child(3) {
+
+#drop-container div:nth-child(3) {
   left: 70%;
   animation: fall 12s linear infinite;
   animation-delay: -7s;
 }
-.drop-container div:nth-child(4) {
+
+#drop-container div:nth-child(4) {
   left: 30%;
   animation: fall 18s linear infinite;
   animation-delay: -5s;
 }
-.drop-container div:nth-child(5) {
+
+#drop-container div:nth-child(5) {
   left: 40%;
   animation: fall 14s linear infinite;
   animation-delay: -5s;
 }
-.drop-container div:nth-child(6) {
+
+#drop-container div:nth-child(6) {
   left: 50%;
   animation: fall 16s linear infinite;
   animation-delay: -10s;
 }
-.drop-container div:nth-child(7) {
+
+#drop-container div:nth-child(7) {
   left: 60%;
   animation: fall 10s linear infinite;
   animation-delay: -4s;
 }
-.drop-container div:nth-child(8) {
+
+#drop-container div:nth-child(8) {
   left: 70%;
   animation: fall 12s linear infinite;
   animation-delay: -3s;
 }
-.drop-container div:nth-child(9) {
+
+#drop-container div:nth-child(9) {
   left: 80%;
   animation: fall 14s linear infinite;
   animation-delay: -7s;
 }
-.drop-container div:nth-child(10) {
+
+#drop-container div:nth-child(10) {
   left: 20%;
   animation: fall 20s linear infinite;
   animation-delay: -1s;
 }
+
 @keyframes fall {
   0% {
     top: -10%;
-    transform: translateX (20px) rotate(0deg);
   }
-  20% {
-    opacity: 0.8;
-    transform: translateX (-20px) rotate(45deg);
-  }
-  40% {
-    transform: translateX (-20px) rotate(90deg);
-  }
-  60% {
-    transform: translateX (-20px) rotate(135deg);
-  }
-  80% {
-    transform: translateX (-20px) rotate(180deg);
+  75% {
+    opacity: 1;
   }
   100% {
-    top: 110%;
-    transform: translateX (-20px) rotate(225deg);
+    top: 90%;
+    opacity: 0;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .skills {
+@media only screen and (max-width: 800px) {
+  #skills {
+    width: $default-width;
+  }
+  #skills-text-container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #skills {
     width: 90%;
     flex-direction: column;
     height: 40rem;
+  }
+
+  #skills-text-container {
+    margin-bottom: -2rem;
+  }
+
+  #drop-container div {
+    font-size: 1rem;
   }
 }

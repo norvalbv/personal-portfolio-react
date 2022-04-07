@@ -5,8 +5,8 @@
 /* colours */
 
 $primary-light: lightgray;
-$primary-neutral: #121212;
-$primary-dark: #000;
+$primary-neutral: #373737;
+$primary-dark: rgb(41, 41, 41);
 
 $secondary-clr-1: #ffa0c7;
 $secondary-clr-2: #72d865;
@@ -31,11 +31,6 @@ $secondary-paragraph-size: 1rem;
     padding: 0;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 ol, ul {
 	list-style: none;
 }
@@ -56,7 +51,7 @@ html::-webkit-scrollbar {
 }
 
 body {
-    background-color: #000;
+    background-color: #121212;
     color: rgb(216, 216, 216);
     font-family: 'Poppins', sans-serif;
     font-size: 16px;

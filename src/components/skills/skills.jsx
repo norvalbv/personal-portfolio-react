@@ -15,16 +15,16 @@ const Skills = () => {
   ];
 
   return (
-    <div className="skills">
-      <div className="skills-text">
+    <div id="skills">
+      <div id="skills-text-container">
         <h2>My skills</h2>
-        <p className="more-to-come">
-          Since my learning journey began I have currently learned the PERN
-          stack. I am expanding my skills every day and am currently learning
+        <p>
+          Since my learning journey began I have specialised in the PERN stack.
+          However, I am expanding my skills every day, I currently learning
           TailwindCSS, JEST and my continued learning on all my current skills.
         </p>
       </div>
-      <div className="drop-container">
+      <div id="drop-container">
         {skills.map((item) => (
           <div key={Math.random()}>{item}</div>
         ))}

@@ -1,40 +1,36 @@
 import "./about-me.scss";
 import profilePhoto from "../../files/images/profile-photo.png";
-import pdfCV from "../../files/other/benjamin-cv.pdf";
+// import pdfCV from "../../files/other/benjamin-cv.pdf";
 
 const AboutMe = () => {
   return (
-    <div className="aboutMe" id="about">
-      <div className="aboutImage">
+    <div id="about">
+      <div className="about-image">
         <img
           src={profilePhoto}
           alt="Headshot of Benjamin Norval"
           id="overlayImage"
-          className="aboutImg"
         />
-        <img
-          src={profilePhoto}
-          alt=""
-          id="underlayImage"
-          className="aboutImg"
-        />
+        <img src={profilePhoto} alt="" id="underlayImage" />
       </div>
-      <div className="aboutText">
+      <div className="about-text">
         <h2>About Me</h2>
         <p>
-          I am a junior front end developer from Wales, United Kingdom.
+          I am a Full Stack developer from Wales, United Kingdom spcialising in
+          the PERN stack.
           <br />
           <br />
           After obtaining my First Class Honours in my business degree at The
           University of Reading I picked up a liking for programming and have
-          been coding ever since!
+          been coding ever since.
           <br />
-          <br />I am currently learning full stack development
+          <br />I would love for you to check out my projects and even reach
+          out!
         </p>
         <button>
-          <a href={pdfCV} target="_blank" rel="noopener noreferrer">
+          {/* <a href={pdfCV} target="_blank" rel="noopener noreferrer">
             Download my CV
-          </a>
+          </a> */}
         </button>
       </div>
     </div>

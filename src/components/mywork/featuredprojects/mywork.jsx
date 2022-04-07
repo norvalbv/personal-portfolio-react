@@ -5,20 +5,9 @@ import googleClone from "../../../files/images/google-clone.png";
 
 export default function MyWork() {
   return (
-    <div className="my-work">
+    <div id="my-work">
       <h2 id="work-heading">My Work</h2>
-      <h3 className="featured-project-mobile">
-        Featured Projects
-        <span
-          style={{
-            fontStyle: "italic",
-            textTransform: "capitalize",
-            color: "lightgray",
-          }}
-        >
-          (Click on the images)
-        </span>
-      </h3>
+      <h3 className="featured-project-mobile">Featured Projects</h3>
       <div className="item-container">
         <div className="item">
           <div className="flex-rightside-portfolio">
@@ -37,7 +26,7 @@ export default function MyWork() {
                 application has recently been updated from client-side only to
                 now be full stack.
               </p>
-              <div className="more-info">
+              <div>
                 <button className="more-info-button">
                   <a
                     href="https://github.com/norvalbv/todo-app-pern-stack"

@@ -1,15 +1,18 @@
 import "./navbar.scss";
 import pdfCV from "../../files/other/benjamin-norval-cv.pdf";
-import ContactPopUp from "../contact-popup/contact-popup.jsx";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
-const NavBar = ({ openmenu, menuOpen, opencontact, contactOpen }) => {
+const NavBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="navbar">
       <nav>
         <div className="mainNav">
           <ul>
             <li className="nav-item">
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li className="nav-item">
               <a href="#about">About Me</a>
@@ -17,16 +20,18 @@ const NavBar = ({ openmenu, menuOpen, opencontact, contactOpen }) => {
             <li className="nav-item">
               <a href="#my-work">My Work</a>
             </li>
-            <li onClick={opencontact}>Contact</li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
             <li className="nav-item">
               <a href={pdfCV} target="_blank" rel="noopener noreferrer">
-                Download CV
+                Resume
               </a>
             </li>
           </ul>
         </div>
         <div className="hamburger">
-          <div className="icon" onClick={openmenu}>
+          <div className="icon" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
@@ -34,7 +39,7 @@ const NavBar = ({ openmenu, menuOpen, opencontact, contactOpen }) => {
           <div className={"hamburger-menu " + (menuOpen && "active")}>
             <ul>
               <li className="hamburger-item">
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li className="hamburger-item">
                 <a href="#about">About Me</a>
@@ -42,23 +47,18 @@ const NavBar = ({ openmenu, menuOpen, opencontact, contactOpen }) => {
               <li className="hamburger-item">
                 <a href="#my-work">My Work</a>
               </li>
-              <li onClick={opencontact}>Contact</li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
               <li className="hamburger-item">
                 <a href={pdfCV} target="_blank" rel="noopener noreferrer">
-                  Download CV
+                  Resume
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      {contactOpen ? (
-        <ContactPopUp
-          className="nav-item"
-          opencontact={opencontact}
-          contactOpen={contactOpen}
-        />
-      ) : null}
     </div>
   );
 };
