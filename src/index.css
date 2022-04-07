@@ -10,7 +10,8 @@
   padding: 0;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -33,11 +34,12 @@ html::-webkit-scrollbar {
 body {
   background-color: #121212;
   color: #d8d8d8;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
 
-a:visited, a:link {
+a:visited,
+a:link {
   text-decoration: none;
   color: #ddd;
 }
@@ -47,5 +49,10 @@ a:visited, a:link {
   padding-inline: 2em;
   margin-inline: auto;
   max-width: 80rem;
+}
+
+.portfolio {
+  background-color: #121212;
+  background-image: radial-gradient(at 0% 100%, #292929 0, transparent 50%), radial-gradient(at 50% 40%, #1b1b32 0, transparent 25%), radial-gradient(at 50% 50%, #1b1b32 0, transparent 60%);
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 // Variables
 
@@ -26,56 +26,69 @@ $secondary-paragraph-size: 1rem;
 /* Resets */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
 // Universal Styles
 
 * {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 html {
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 
 html::-webkit-scrollbar {
-    width: 0; /* For Chrome, Safari, and Opera */
+  width: 0; /* For Chrome, Safari, and Opera */
 }
 
 body {
-    background-color: #121212;
-    color: rgb(216, 216, 216);
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+  background-color: #121212;
+  color: rgb(216, 216, 216);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 
-a:visited, a:link { 
-    text-decoration: none; 
-    color: #ddd;
+a:visited,
+a:link {
+  text-decoration: none;
+  color: #ddd;
 }
 
 /* Utility Classes */
 
 .container {
-    padding-inline: 2em;
-    margin-inline: auto;
-    max-width: 80rem;
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
 }
 
 // Mixins //
 
 @mixin header2 {
-    color: $secondary-clr-1;
-    letter-spacing: 5px;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 600;
+  color: $secondary-clr-1;
+  letter-spacing: 5px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.portfolio {
+  background-color: #121212;
+  background-image: radial-gradient(
+      at 0% 100%,
+      $primary-dark 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 40%, $secondary-clr-3 0, transparent 25%),
+    radial-gradient(at 50% 50%, $secondary-clr-3 0, transparent 60%);
 }

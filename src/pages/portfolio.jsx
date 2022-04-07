@@ -9,7 +9,7 @@ import { Test } from "../components/test/test";
 
 export const Portfolio = () => {
   return (
-    <>
+    <div className="portfolio">
       <NavBar />
       <Test />
       <AboutMe />
@@ -18,6 +18,6 @@ export const Portfolio = () => {
       <Skills />
       <ContactMe />
       <Footer />
-    </>
+    </div>
   );
 };
