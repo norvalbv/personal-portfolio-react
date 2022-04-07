@@ -53,10 +53,10 @@ a:link {
 
 .portfolio {
   background-color: #121212;
-  background-image: radial-gradient(at 0% 100%, #292929 0, transparent 50%), radial-gradient(at 50% 40%, #1b1b32 0, transparent 25%), radial-gradient(at 50% 50%, #1b1b32 0, transparent 60%);
+  background-image: radial-gradient(at 0% 100%, #292929 0, transparent 50%), radial-gradient(at 50% 45%, #1b1b32 0, transparent 25%), radial-gradient(at 50% 55%, #1b1b32 0, transparent 60%);
 }
 
-.navbar {
+nav {
   height: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,7 +76,7 @@ a:link {
   top: 0.25rem;
 }
 
-.navbar::before {
+nav::before {
   width: 100%;
   height: 0.25rem;
   background: -webkit-gradient(linear, left top, right top, from(#ffa0c7), to(#72d865));
@@ -86,20 +86,19 @@ a:link {
   content: "";
 }
 
-.navbar nav .mainNav li {
+nav .mainNav li {
   display: inline-block;
   font-size: 14px;
-  margin: 0 20px;
+  margin: 0 1.5rem;
   cursor: pointer;
-  height: 20px;
 }
 
-.navbar nav .mainNav li:hover {
+nav .mainNav li:hover {
   border-bottom: solid;
   color: #ffa0c7;
 }
 
-.navbar nav .mainNav li a:hover {
+nav .mainNav li a:hover {
   color: #ffa0c7;
 }
 
@@ -111,12 +110,7 @@ a:link {
   display: none;
 }
 
-#logo {
-  position: relative;
-  left: 15px;
-}
-
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 650px) {
   .mainNav {
     display: none;
   }
@@ -142,8 +136,8 @@ a:link {
     background-color: lightgray;
   }
   .hamburger .hamburger-menu {
-    width: 100% !important;
-    height: calc(100vh - 3rem) !important;
+    width: 100%;
+    height: calc(100vh - 3rem);
     position: fixed;
     left: 0;
   }
@@ -165,19 +159,25 @@ a:link {
     cursor: pointer;
   }
   .hamburger .hamburger-menu.active {
-    border-top: 1px solid rgba(179, 179, 179, 0.25);
     display: block;
-    height: 40vh;
-    width: 30vh;
-    background-color: #121212;
-    border: 1px solid #292929;
     position: absolute;
     top: 3rem;
+    background-color: #121212;
+    background-image: radial-gradient(at 0% 100%, #292929 0, transparent 50%), radial-gradient(at 0% 0%, #1b1b32 0, transparent 25%), radial-gradient(at 100% 100%, #1b1b32 0, transparent 60%);
   }
 }
 
 .hamburger-item {
   color: lightgray;
+  margin-top: 0.5rem;
+  border-bottom: 2px solid transparent;
+  -o-border-image: linear-gradient(to left, #ffa0c7, #72d865);
+     border-image: -webkit-gradient(linear, right top, left top, from(#ffa0c7), to(#72d865));
+     border-image: linear-gradient(to left, #ffa0c7, #72d865);
+  border-image-slice: 1;
+  width: 25%;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .hamburger-item:hover {

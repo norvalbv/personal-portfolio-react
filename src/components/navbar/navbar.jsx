@@ -6,60 +6,59 @@ import { useState } from "react";
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
-    <div className="navbar">
-      <nav>
-        <div className="mainNav">
+    <nav>
+      <ul className="mainNav">
+        <li className="nav-item">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="nav-item">
+          <a href="#about">About Me</a>
+        </li>
+        <li className="nav-item">
+          <a href="#my-work">My Work</a>
+        </li>
+        <li>
+          <a href="#contact">Get In Touch</a>
+        </li>
+        <li className="nav-item">
+          <a href={pdfCV} target="_blank" rel="noopener noreferrer">
+            Resume
+          </a>
+        </li>
+      </ul>
+      <div className="hamburger">
+        <div className="icon" onClick={handleMenu}>
+          <span className="line1"></span>
+          <span className="line2"></span>
+          <span className="line3"></span>
+        </div>
+        <div className={"hamburger-menu " + (menuOpen && "active")}>
           <ul>
-            <li className="nav-item">
+            <li className="hamburger-item" onClick={handleMenu}>
               <Link to="/">Home</Link>
             </li>
-            <li className="nav-item">
+            <li className="hamburger-item" onClick={handleMenu}>
               <a href="#about">About Me</a>
             </li>
-            <li className="nav-item">
+            <li className="hamburger-item" onClick={handleMenu}>
               <a href="#my-work">My Work</a>
             </li>
-            <li>
-              <a href="#contact">Contact</a>
+            <li className="hamburger-item" onClick={handleMenu}>
+              <a href="#contact">Get In Touch</a>
             </li>
-            <li className="nav-item">
+            <li className="hamburger-item" onClick={handleMenu}>
               <a href={pdfCV} target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
             </li>
           </ul>
         </div>
-        <div className="hamburger">
-          <div className="icon" onClick={() => setMenuOpen(!menuOpen)}>
-            <span className="line1"></span>
-            <span className="line2"></span>
-            <span className="line3"></span>
-          </div>
-          <div className={"hamburger-menu " + (menuOpen && "active")}>
-            <ul>
-              <li className="hamburger-item">
-                <Link to="/">Home</Link>
-              </li>
-              <li className="hamburger-item">
-                <a href="#about">About Me</a>
-              </li>
-              <li className="hamburger-item">
-                <a href="#my-work">My Work</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-              <li className="hamburger-item">
-                <a href={pdfCV} target="_blank" rel="noopener noreferrer">
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 

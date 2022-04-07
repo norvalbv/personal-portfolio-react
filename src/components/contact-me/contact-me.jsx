@@ -16,8 +16,8 @@ const ContactMe = () => {
         <h3 className="input-label">Name</h3>
         <input
           type="text"
-          minlength="1"
-          maxlength="100"
+          minLength="1"
+          maxLength="100"
           pattern="[a-zA-Z]+"
           required
           className="input-field"

@@ -1,6 +1,6 @@
 @import "../../index.scss";
 
-.navbar {
+nav {
   height: 3rem;
   display: flex;
   align-items: center;
@@ -21,25 +21,20 @@
     content: "";
   }
 
-  nav {
-    .mainNav {
-      li {
-        display: inline-block;
-        font-size: 14px;
-        margin: 0 20px;
-        cursor: pointer;
-        height: 20px;
-        // transition: 0.5s ease !important;
-        // CSS not working on anchor tags.
-        // CSS Transition Is Stopped In Universal CSS
-        &:hover {
-          border-bottom: solid;
-          color: $secondary-clr-1;
-        }
+  .mainNav {
+    li {
+      display: inline-block;
+      font-size: 14px;
+      margin: 0 1.5rem;
+      cursor: pointer;
 
-        a:hover {
-          color: $secondary-clr-1;
-        }
+      &:hover {
+        border-bottom: solid;
+        color: $secondary-clr-1;
+      }
+
+      a:hover {
+        color: $secondary-clr-1;
       }
     }
   }
@@ -52,12 +47,7 @@
   }
 }
 
-#logo {
-  position: relative;
-  left: 15px;
-}
-
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 650px) {
   .mainNav {
     display: none;
   }
@@ -81,8 +71,8 @@
     }
 
     .hamburger-menu {
-      width: 100% !important;
-      height: calc(100vh - 3rem) !important;
+      width: 100%;
+      height: calc(100vh - 3rem);
       position: fixed;
       left: 0;
       ul {
@@ -97,14 +87,17 @@
       }
 
       &.active {
-        border-top: 1px solid $border;
         display: block;
-        height: 40vh;
-        width: 30vh;
-        background-color: #121212;
-        border: 1px solid $primary-dark;
         position: absolute;
         top: 3rem;
+        background-color: #121212;
+        background-image: radial-gradient(
+            at 0% 100%,
+            $primary-dark 0,
+            transparent 50%
+          ),
+          radial-gradient(at 0% 0%, $secondary-clr-3 0, transparent 25%),
+          radial-gradient(at 100% 100%, $secondary-clr-3 0, transparent 60%);
       }
     }
   }
@@ -112,6 +105,13 @@
 
 .hamburger-item {
   color: $primary-light;
+  margin-top: 0.5rem;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to left, $secondary-clr-1, $secondary-clr-2);
+  border-image-slice: 1;
+  width: 25%;
+  padding: 0.5rem;
+  text-align: center;
 
   &:hover {
     color: $secondary-clr-1;

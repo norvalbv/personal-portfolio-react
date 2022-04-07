@@ -6,8 +6,6 @@ export const Intro = () => {
   let classname = ["a", "b", "c", "d", "e", "f"];
   return (
     <div id="welcome">
-      <div class="wave"></div>
-
       {header.split("").map((item, i) => (
         <span
           className={[
