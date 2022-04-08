@@ -2,7 +2,7 @@
 
 #intro {
   height: calc(100vh - 3rem);
-  padding: 9%;
+  padding: 6%;
   text-transform: uppercase;
   position: relative;
 
@@ -20,14 +20,15 @@
     gap: 2rem;
 
     h1 {
-      font-size: 5rem;
+      font-size: 4rem;
       font-weight: 600;
       letter-spacing: 2px;
     }
 
     h2 {
-      font-size: 1rem;
-      line-height: 2;
+      font-size: 0.8rem;
+      line-height: 1.75;
+      letter-spacing: 1px;
     }
   }
 }
@@ -47,6 +48,7 @@
   right: 0;
   left: 0;
   bottom: 0.5rem;
+  font-size: 0.75rem;
 
   &:hover {
     text-decoration: underline;
@@ -122,11 +124,12 @@ h2 span:hover {
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     .text {
       margin-top: -2.5rem;
       h1 {
-        font-size: 4rem;
+        font-size: 3rem;
       }
     }
   }
@@ -137,15 +140,5 @@ h2 span:hover {
 
   #arr-down {
     display: block;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #intro {
-    .text {
-      h1 {
-        font-size: 3rem;
-      }
-    }
   }
 }

@@ -27,11 +27,11 @@ const AboutMe = () => {
           <br />I would love for you to check out my projects and even reach
           out!
         </p>
-        <button>
+        {/* <button> */}
           {/* <a href={pdfCV} target="_blank" rel="noopener noreferrer">
             Download my CV
           </a> */}
-        </button>
+        {/* </button> */}
       </div>
     </div>
   );
