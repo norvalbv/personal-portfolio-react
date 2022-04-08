@@ -170,14 +170,26 @@ nav .mainNav li a:hover {
 .hamburger-item {
   color: lightgray;
   margin-top: 0.5rem;
-  border-bottom: 2px solid transparent;
-  -o-border-image: linear-gradient(to left, #ffa0c7, #72d865);
-     border-image: -webkit-gradient(linear, right top, left top, from(#ffa0c7), to(#72d865));
-     border-image: linear-gradient(to left, #ffa0c7, #72d865);
-  border-image-slice: 1;
   min-width: 7.5rem;
   padding: 0.5rem;
   text-align: center;
+  position: relative;
+}
+
+.hamburger-item::before {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 0.1rem;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa0c7), to(#72d865));
+  background: linear-gradient(to right, #ffa0c7, #72d865);
+  position: absolute;
+  bottom: 0;
+  content: "";
 }
 
 .hamburger-item:hover {

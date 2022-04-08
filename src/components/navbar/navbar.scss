@@ -106,12 +106,21 @@ nav {
 .hamburger-item {
   color: $primary-light;
   margin-top: 0.5rem;
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(to left, $secondary-clr-1, $secondary-clr-2);
-  border-image-slice: 1;
   min-width: 7.5rem;
   padding: 0.5rem;
   text-align: center;
+  position: relative;
+
+  &::before {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 0.1rem;
+    background: linear-gradient(to right, $secondary-clr-1, $secondary-clr-2);
+    position: absolute;
+    bottom: 0;
+    content: "";
+  }
 
   &:hover {
     color: $secondary-clr-1;
