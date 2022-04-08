@@ -175,27 +175,27 @@ h2 span:hover {
 }
 
 .a:hover {
-  color: gold;
+  color: #884184;
 }
 
 .b:hover {
-  color: pink;
+  color: gold;
 }
 
 .c:hover {
-  color: gray;
+  color: #72afb1;
 }
 
 .d:hover {
-  color: lightblue;
+  color: #ffa0c7;
 }
 
 .e:hover {
-  color: lightcoral;
+  color: #72d865;
 }
 
 .f:hover {
-  color: lightseagreen;
+  color: #1b1b32;
 }
 
 @media only screen and (max-width: 650px) {

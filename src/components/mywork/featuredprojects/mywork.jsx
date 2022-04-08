@@ -9,16 +9,16 @@ export default function MyWork() {
       <h2 id="my-work">My Work</h2>
       <div className="item-container">
         <div className="item">
-          <div className="flex-rightside-portfolio">
+          <div className="image-flex">
             <img
               src={ecomApp}
               alt="Rock Paper Scissors"
               className="project-screenshot"
             />
           </div>
-          <div className="flex-leftside-portfolio second">
+          <div className="text-flex second" id="ecom">
             <h3 className="featured-project">Featured Project</h3>
-            <h4 className="project-title">Full Stack E-commerce Project</h4>
+            <h4 className="project-title">Full Stack E-commerce App</h4>
             <div className="project-desc-wrap">
               <p className="project-desc">
                 A Full Stack e-commerce web app built with the PERN stack. There
@@ -59,45 +59,47 @@ export default function MyWork() {
           </div>
         </div>
         <div className="item">
-          <div className="flex-leftside-portfolio first">
-            <h3 className="featured-project">Featured Project</h3>
-            <h4 className="project-title">Google Clone</h4>
-            <div className="project-desc-wrap" id="second-project">
-              <p>
-                A Google Clone built with React hooks and functional components.
-                The project uses an online API from RapidAPIs for receiving the
-                data.
-              </p>
-              <div className="more-info">
-                <a
-                  href="https://github.com/norvalbv/google-clone"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="more-info-button"
-                >
-                  Learn More
-                </a>
-                <a
-                  href="https://google-clone-by-benji.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="more-info-button"
-                >
-                  View Live Demo
-                </a>
+          <div className="text-flex first" id="google">
+            <div className="project-details">
+              <h3 className="featured-project">Featured Project</h3>
+              <h4 className="project-title">Google Clone</h4>
+              <div className="project-desc-wrap" id="second-project">
+                <p>
+                  A Google Clone built with React hooks and functional
+                  components. The project uses an online API from RapidAPIs for
+                  receiving the data.
+                </p>
+                <div className="more-info">
+                  <a
+                    href="https://github.com/norvalbv/google-clone"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="more-info-button"
+                  >
+                    Learn More
+                  </a>
+                  <a
+                    href="https://google-clone-by-benji.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="more-info-button"
+                  >
+                    View Live Demo
+                  </a>
+                </div>
+              </div>
+              <div className="icons">
+                <ul>
+                  <li>HTML/CSS</li>
+                  <li>SASS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>API</li>
+                </ul>
               </div>
             </div>
-            <div className="icons">
-              <ul>
-                <li>HTML/CSS</li>
-                <li>SASS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>API</li>
-              </ul>
-            </div>
           </div>
-          <div className="flex-rightside-portfolio">
+          <div className="image-flex">
             <img
               src={googleClone}
               alt="Interactive Comment Section screenshot"
@@ -106,14 +108,14 @@ export default function MyWork() {
           </div>
         </div>
         <div className="item">
-          <div className="flex-rightside-portfolio">
+          <div className="image-flex">
             <img
               src={todoApp}
               alt="Interactive Comment Section screenshot"
               className="project-screenshot"
             />
           </div>
-          <div className="flex-leftside-portfolio second">
+          <div className="text-flex second" id="todo">
             <h3 className="featured-project">Featured Project</h3>
             <h4 className="project-title">Full Stack Todo app</h4>
             <div className="project-desc-wrap">

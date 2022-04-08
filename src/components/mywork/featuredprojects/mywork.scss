@@ -9,8 +9,6 @@
 .item-container {
   width: $default-width;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 
   .item {
     display: flex;
@@ -19,10 +17,11 @@
   }
 }
 
-.flex-leftside-portfolio {
+.text-flex {
   flex: 1;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 
   .featured-project {
     font-size: 0.9rem;
@@ -39,10 +38,6 @@
     text-transform: capitalize;
   }
 
-  #second-project:hover {
-    transform: translateX(10px);
-  }
-
   .project-desc-wrap {
     background: $primary-dark;
     height: 50%;
@@ -51,16 +46,10 @@
     justify-content: center;
     gap: 0.5rem;
     width: 125%;
-    z-index: 1;
     border-radius: 5px;
     padding: 1rem;
     box-shadow: 5px 5px 3px #121212;
     margin: 1rem 0;
-    transition: 0.75s ease;
-
-    &:hover {
-      transform: translateX(-10px);
-    }
 
     .project-desc {
       font-size: 14px;
@@ -71,23 +60,23 @@
     display: inline-block;
     font-size: 14px;
   }
-}
 
-.more-info-button {
-  text-transform: uppercase;
-  font-size: 14px;
-  background: none;
-  border: none;
-  color: $primary-light;
-  border-bottom: 1px solid $border;
-  cursor: pointer;
+  .more-info-button {
+    text-transform: uppercase;
+    font-size: 14px;
+    background: none;
+    border: none;
+    color: $primary-light;
+    border-bottom: 1px solid $border;
+    cursor: pointer;
 
-  &:hover {
-    color: $secondary-clr-2;
+    &:hover {
+      color: $secondary-clr-2;
+    }
   }
 }
 
-.flex-rightside-portfolio {
+.image-flex {
   flex: 1;
   height: 15rem;
 
@@ -101,10 +90,7 @@
 
 .first {
   padding-left: 5rem;
-
-  .project-desc-wrap {
-    align-items: flex-start;
-  }
+  align-items: flex-end;
 
   .icons ul li {
     margin-right: 1rem;
@@ -123,12 +109,13 @@
   padding-right: 5rem;
   align-items: flex-end;
 
-  .project-title {
-    text-align: end;
+  .project-details {
+    align-items: flex-end;
   }
 
   .project-desc-wrap {
     align-items: flex-end;
+
     .project-desc {
       text-align: right;
     }
@@ -152,6 +139,27 @@
   }
 }
 
+@media only screen and (min-width: 800px) {
+  .text-flex {
+    #second-project:hover {
+      transform: translateX(10px);
+    }
+    .project-desc-wrap {
+      transition: 0.75s ease;
+
+      &:hover {
+        transform: translateX(-10px);
+      }
+    }
+  }
+
+  .second {
+    .project-title {
+      text-align: center;
+    }
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .item-container {
     .item {
@@ -162,13 +170,17 @@
     }
   }
 
-  .flex-rightside-portfolio {
+  .image-flex {
     .project-screenshot {
       display: none;
     }
   }
 
-  .flex-leftside-portfolio {
+  .project-details {
+    z-index: 1;
+  }
+
+  .text-flex {
     padding: 1rem 0;
     background-color: $primary-dark;
     position: absolute;
@@ -179,8 +191,16 @@
     box-shadow: 5px 5px 5px #121212;
     border: 1px solid #121212;
 
-    .featured-project {
-      display: none;
+    &::before {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      content: "";
+      position: absolute;
+      filter: brightness(0.25) grayscale(60%);
+      background-size: cover;
+      z-index: -1;
     }
 
     .project-desc-wrap {
@@ -193,6 +213,26 @@
       .project-desc {
         text-align: center;
       }
+    }
+  }
+
+  #todo::before {
+    background-image: url("../../../files/images/todo-application.png");
+  }
+
+  #google::before {
+    background-image: url("../../../files/images/google-clone.png");
+  }
+
+  #ecom::before {
+    background-image: url("../../../files/images/landingpage.png");
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .item-container {
+    .item {
+      height: 25rem;
     }
   }
 }
