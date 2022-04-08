@@ -181,7 +181,7 @@ a:link {
 
 .flex-rightside-portfolio .project-screenshot {
   width: 100%;
-  height: 17rem;
+  height: 16rem;
   border-radius: 5px;
   -webkit-box-shadow: 3px 3px 6px #3c3c3c;
           box-shadow: 3px 3px 6px #3c3c3c;
@@ -251,7 +251,7 @@ a:link {
 
 @media only screen and (max-width: 800px) {
   .item-container .item {
-    height: 17.5rem;
+    height: 20rem;
     position: relative;
     border: none;
     margin: 0.5rem 0;

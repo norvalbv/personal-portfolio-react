@@ -99,8 +99,7 @@ a:link {
      border-image: -webkit-gradient(linear, left top, right top, from(#ffa0c7), to(#72d865));
      border-image: linear-gradient(to right, #ffa0c7, #72d865);
   border-image-slice: 1;
-  border-width: 0px 0px 2px 0px;
-  border-radius: 5px;
+  padding: .5rem;
   color: lightgray;
 }
 
@@ -141,6 +140,11 @@ a:link {
 #socials li:hover {
   text-decoration: underline;
   opacity: 0.5;
+}
+
+textarea {
+  resize: vertical;
+  font-family: inherit;
 }
 
 @media only screen and (max-width: 800px) {
