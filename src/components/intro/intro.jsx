@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import "./intro.scss";
 import { init } from "ityped";
-import IntroChild from "../landingchild";
+// import IntroChild from "../landingchild";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 export default function Intro() {

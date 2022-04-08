@@ -1,7 +1,7 @@
 import "./mywork.scss";
-import rockPaperScissors from "../../../files/images/rock-paper-scissors.png";
-import interactiveCommentSection from "../../../files/images/todo-application.png";
+import todoApp from "../../../files/images/todo-application.png";
 import googleClone from "../../../files/images/google-clone.png";
+import ecomApp from "../../../files/images/landingpage.png";
 
 export default function MyWork() {
   return (
@@ -11,7 +11,7 @@ export default function MyWork() {
         <div className="item">
           <div className="flex-rightside-portfolio">
             <img
-              src={rockPaperScissors}
+              src={ecomApp}
               alt="Rock Paper Scissors"
               className="project-screenshot"
             />
@@ -27,7 +27,7 @@ export default function MyWork() {
               </p>
               <div className="more-info">
                 <a
-                  href="#"
+                  href="https://ecommerce-full-stack.herokuapp.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="more-info-button"
@@ -108,7 +108,7 @@ export default function MyWork() {
         <div className="item">
           <div className="flex-rightside-portfolio">
             <img
-              src={interactiveCommentSection}
+              src={todoApp}
               alt="Interactive Comment Section screenshot"
               className="project-screenshot"
             />

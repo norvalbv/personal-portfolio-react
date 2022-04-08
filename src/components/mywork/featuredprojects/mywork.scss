@@ -82,10 +82,8 @@
   border-bottom: 1px solid $border;
   cursor: pointer;
 
-  a {
-    &:hover {
-      color: $secondary-clr-2;
-    }
+  &:hover {
+    color: $secondary-clr-2;
   }
 }
 

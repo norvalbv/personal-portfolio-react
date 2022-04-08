@@ -168,7 +168,7 @@ a:link {
   cursor: pointer;
 }
 
-.more-info-button a:hover {
+.more-info-button:hover {
   color: #72d865;
 }
 
