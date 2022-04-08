@@ -5,46 +5,43 @@ import googleClone from "../../../files/images/google-clone.png";
 
 export default function MyWork() {
   return (
-    <div id="my-work">
-      <h2 id="work-heading">My Work</h2>
-      <h3 className="featured-project-mobile">Featured Projects</h3>
+    <>
+      <h2 id="my-work">My Work</h2>
       <div className="item-container">
         <div className="item">
           <div className="flex-rightside-portfolio">
             <img
-              src={interactiveCommentSection}
-              alt="Interactive Comment Section screenshot"
+              src={rockPaperScissors}
+              alt="Rock Paper Scissors"
               className="project-screenshot"
             />
           </div>
           <div className="flex-leftside-portfolio second">
             <h3 className="featured-project">Featured Project</h3>
-            <h4 className="project-title">Todo app</h4>
+            <h4 className="project-title">Full Stack E-commerce Project</h4>
             <div className="project-desc-wrap">
-              <p>
-                A full stack to-do application using the PERN stack. This
-                application has recently been updated from client-side only to
-                now be full stack.
+              <p className="project-desc">
+                A Full Stack e-commerce web app built with the PERN stack. There
+                are different categories, products and more making the web app
+                as releastic as possible.
               </p>
-              <div>
-                <button className="more-info-button">
-                  <a
-                    href="https://github.com/norvalbv/todo-app-pern-stack"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Read more
-                  </a>
-                </button>
-                <button className="more-info-button">
-                  <a
-                    href="https://todo-application-using-pern.herokuapp.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Live Demo
-                  </a>
-                </button>
+              <div className="more-info">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="more-info-button"
+                >
+                  Check Live Demo
+                </a>
+                <a
+                  href="https://github.com/norvalbv/ecommerce"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="more-info-button"
+                >
+                  Learn More
+                </a>
               </div>
             </div>
             <div className="icons">
@@ -53,8 +50,9 @@ export default function MyWork() {
                 <li>SASS</li>
                 <li>JavaScript</li>
                 <li>React</li>
-                <li>Express</li>
+                <li>Redux</li>
                 <li>Node</li>
+                <li>Express JS</li>
                 <li>PostgreSQL</li>
               </ul>
             </div>
@@ -64,31 +62,29 @@ export default function MyWork() {
           <div className="flex-leftside-portfolio first">
             <h3 className="featured-project">Featured Project</h3>
             <h4 className="project-title">Google Clone</h4>
-            <div className="project-desc-wrap">
+            <div className="project-desc-wrap" id="second-project">
               <p>
                 A Google Clone built with React hooks and functional components.
                 The project uses an online API from RapidAPIs for receiving the
                 data.
               </p>
               <div className="more-info">
-                <button className="more-info-button">
-                  <a
-                    href="https://github.com/norvalbv/google-clone"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Read more
-                  </a>
-                </button>
-                <button className="more-info-button">
-                  <a
-                    href="https://google-clone-by-benji.herokuapp.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Live Demo
-                  </a>
-                </button>
+                <a
+                  href="https://github.com/norvalbv/google-clone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="more-info-button"
+                >
+                  Learn More
+                </a>
+                <a
+                  href="https://google-clone-by-benji.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="more-info-button"
+                >
+                  View Live Demo
+                </a>
               </div>
             </div>
             <div className="icons">
@@ -109,43 +105,40 @@ export default function MyWork() {
             />
           </div>
         </div>
-
         <div className="item">
           <div className="flex-rightside-portfolio">
             <img
-              src={rockPaperScissors}
-              alt="Rock Paper Scissors"
+              src={interactiveCommentSection}
+              alt="Interactive Comment Section screenshot"
               className="project-screenshot"
             />
           </div>
           <div className="flex-leftside-portfolio second">
             <h3 className="featured-project">Featured Project</h3>
-            <h4 className="project-title">Rock Paper Scissors Game</h4>
+            <h4 className="project-title">Full Stack Todo app</h4>
             <div className="project-desc-wrap">
-              <p className="project-desc">
-                A Rock Paper Scissors game built with React. The project build
-                has tested my CSS animations and understanding and also
-                understanding of managing complex states.
+              <p>
+                A full stack to-do application using the PERN stack. This
+                application has recently been updated from client-side only to
+                now be full stack.
               </p>
-              <div className="more-info">
-                <button className="more-info-button">
-                  <a
-                    href="https://rock-paper-scissors-app-demo.herokuapp.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Check Live Demo
-                  </a>
-                </button>
-                <button className="more-info-button">
-                  <a
-                    href="https://github.com/norvalbv/rock-paper-scissors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Read more
-                  </a>
-                </button>
+              <div>
+                <a
+                  href="https://github.com/norvalbv/todo-app-pern-stack"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="more-info-button"
+                >
+                  Learn More
+                </a>
+                <a
+                  href="https://todo-application-using-pern.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="more-info-button"
+                >
+                  View Live Demo
+                </a>
               </div>
             </div>
             <div className="icons">
@@ -154,12 +147,14 @@ export default function MyWork() {
                 <li>SASS</li>
                 <li>JavaScript</li>
                 <li>React</li>
-                <li>Redux</li>
+                <li>Express</li>
+                <li>Node</li>
+                <li>PostgreSQL</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

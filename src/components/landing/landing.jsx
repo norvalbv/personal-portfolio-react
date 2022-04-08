@@ -29,7 +29,7 @@ export default function Landing() {
 
   return (
     <div className="intro">
-      <IntroChild />
+      {/* <IntroChild /> */}
       <div className="text">
         <h1>
           {heading.split("").map((item, i) => (

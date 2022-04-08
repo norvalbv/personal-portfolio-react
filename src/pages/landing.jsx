@@ -10,9 +10,9 @@ import Landing from "../components/landing/landing";
 export const LandingPage = () => {
   const [loading, setLoading] = useState(true);
 
-  setTimeout(() => {
-    setLoading(false);
-  }, 2500);
+  // setTimeout(() => {
+  //   setLoading(false);
+  // }, 2500);
 
   const textRef = useRef();
 
@@ -33,11 +33,11 @@ export const LandingPage = () => {
   let navigate = useNavigate();
   setTimeout(() => {
     return navigate("/portfolio");
-  }, 10000);
+  }, 2500);
   return (
     <>
       {loading && <Loading />}
-      {!loading && <Landing />}
+      {/* {!loading && <Landing />} */}
       {/* {!loading && (
         <div className="intro">
           <IntroChild />

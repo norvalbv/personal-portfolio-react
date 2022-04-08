@@ -3,7 +3,6 @@
 #about {
   display: flex;
   align-items: center;
-  margin: 1rem 0;
   height: calc(100vh - 3rem);
 }
 
@@ -51,7 +50,6 @@
     cursor: pointer;
     width: 8rem;
     color: #fff;
-    margin: 0 1rem;
     background-color: $secondary-clr-1;
   }
 }
@@ -65,10 +63,6 @@
 
   .about-text {
     margin-top: 3rem;
-
-    p {
-      font-size: 12px;
-    }
   }
 
   .about-image {

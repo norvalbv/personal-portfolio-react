@@ -109,7 +109,7 @@ nav {
   border-bottom: 2px solid transparent;
   border-image: linear-gradient(to left, $secondary-clr-1, $secondary-clr-2);
   border-image-slice: 1;
-  width: 25%;
+  min-width: 7.5rem;
   padding: 0.5rem;
   text-align: center;
 

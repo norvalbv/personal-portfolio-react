@@ -175,7 +175,7 @@ nav .mainNav li a:hover {
      border-image: -webkit-gradient(linear, right top, left top, from(#ffa0c7), to(#72d865));
      border-image: linear-gradient(to left, #ffa0c7, #72d865);
   border-image-slice: 1;
-  width: 25%;
+  min-width: 7.5rem;
   padding: 0.5rem;
   text-align: center;
 }
