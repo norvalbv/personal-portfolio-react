@@ -71,7 +71,6 @@ a:link {
   padding: 4rem 2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#292929));
   background: linear-gradient(rgba(0, 0, 0, 0), #292929);
-  border-bottom: 1px solid rgba(179, 179, 179, 0.25);
 }
 
 #contact #contact-title {
@@ -87,7 +86,7 @@ a:link {
 }
 
 #contact .input-container {
-  width: 40%;
+  width: 35%;
 }
 
 #contact .input-container .input-field {

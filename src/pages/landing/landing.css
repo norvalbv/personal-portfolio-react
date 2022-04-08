@@ -1,5 +1,4 @@
-.who {
-  background: none !important;
+#who {
   font-size: 5rem;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -9,5 +8,6 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  text-align: center;
 }
-/*# sourceMappingURL=loading.css.map */
+/*# sourceMappingURL=landing.css.map */

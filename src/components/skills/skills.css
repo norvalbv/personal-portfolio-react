@@ -234,7 +234,7 @@ a:link {
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
   #skills {
     width: 90%;
     -webkit-box-orient: vertical;

@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { LandingPage } from "./pages/landing";
-import { Portfolio } from "./pages/portfolio";
+import LandingPage from "./pages/landing/landing";
+import PortfolioPage from "./pages/portfolio";
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
-        <Route path="/portfolio" element={<Portfolio />}></Route>
+        <Route path="/portfolio" element={<PortfolioPage />}></Route>
       </Routes>
     </Router>
   );

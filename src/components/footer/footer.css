@@ -69,12 +69,11 @@ footer {
 
 footer p {
   margin: 1rem 0;
-  font-size: 11px;
   text-transform: capitalize;
 }
 
 footer .email {
-  font-size: 10px;
+  font-size: 11px;
   text-transform: none;
 }
 /*# sourceMappingURL=footer.css.map */
