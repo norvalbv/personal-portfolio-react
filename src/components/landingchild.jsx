@@ -1,7 +1,7 @@
 import Particles from "react-tsparticles";
-import "./landing.scss";
+import "./intro/intro.scss";
 
-export default function IntroChild() {
+export default function LandingChild() {
   return (
     <div>
       <Particles

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import IntroChild from "../../components/landing/landingchild";
+import LandingChild from "../../components/landingchild";
 import "./landing.scss";
 
 const LandingPage = () => {
@@ -12,7 +12,7 @@ const LandingPage = () => {
   }, []);
   return (
     <>
-      <IntroChild />
+      <LandingChild />
       <h2 id="who">Who am I?</h2>
     </>
   );

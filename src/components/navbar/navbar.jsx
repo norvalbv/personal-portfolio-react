@@ -1,5 +1,5 @@
 import "./navbar.scss";
-import pdfCV from "../../files/other/benjamin-norval-cv.pdf";
+// import pdfCV from "../../files/other/benjamin-norval-cv.pdf";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -25,9 +25,9 @@ const NavBar = () => {
           <a href="#contact">Get In Touch</a>
         </li>
         <li className="nav-item">
-          <a href={pdfCV} target="_blank" rel="noopener noreferrer">
+          {/* <a href={pdfCV} target="_blank" rel="noopener noreferrer">
             Resume
-          </a>
+          </a> */}
         </li>
       </ul>
       <div className="hamburger">
@@ -51,9 +51,9 @@ const NavBar = () => {
               <a href="#contact">Get In Touch</a>
             </li>
             <li className="hamburger-item" onClick={handleMenu}>
-              <a href={pdfCV} target="_blank" rel="noopener noreferrer">
+              {/* <a href={pdfCV} target="_blank" rel="noopener noreferrer">
                 Resume
-              </a>
+              </a> */}
             </li>
           </ul>
         </div>
