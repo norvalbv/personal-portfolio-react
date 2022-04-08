@@ -22,7 +22,7 @@ export default function Intro() {
   let classname = ["a", "b", "c", "d", "e", "f"];
 
   return (
-    <div className="intro">
+    <div id="intro">
       {/* <IntroChild /> */}
       <div className="text">
         <h1>
@@ -58,7 +58,7 @@ export default function Intro() {
       </div>
       <div className="scroll">
         <p>Get to know me</p>
-        <ArrowDownwardIcon fontSize="small" id="arr-forward" />
+        <ArrowDownwardIcon fontSize="small" />
       </div>
     </div>
   );

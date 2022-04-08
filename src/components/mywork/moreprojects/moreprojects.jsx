@@ -65,9 +65,6 @@ export default function MoreProjects() {
           >
             Learn More
           </a>
-          <ul className="icons">
-            <li>HTML/CSS</li>
-          </ul>
         </div>
       </div>
       <button className="learn-more-button">
