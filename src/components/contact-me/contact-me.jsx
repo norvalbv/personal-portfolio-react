@@ -14,36 +14,44 @@ const ContactMe = () => {
         className="input-container"
       >
         <h3 className="input-label">Name</h3>
-        <input
-          type="text"
-          minLength="1"
-          maxLength="100"
-          pattern="[a-zA-Z]+"
-          required
-          className="input-field"
-          placeholder="Name"
-        />
+        <div className="input">
+          <input
+            type="text"
+            minLength="1"
+            maxLength="100"
+            pattern="[a-zA-Z]+"
+            required
+            className="input-field"
+            placeholder="Name"
+          />
+        </div>
         <h3 className="input-label">Email</h3>
-        <input
-          type="text"
-          id="email"
-          className="input-field"
-          required
-          placeholder="Email"
-        />
+        <div className="input">
+          <input
+            type="text"
+            id="email"
+            className="input-field"
+            required
+            placeholder="Email"
+          />
+        </div>
         <h3 className="input-label">Send me a message</h3>
-        <input
-          type="text"
-          name="_subject"
-          placeholder="Subject"
-          className="input-field"
-        />
-        <textarea
-          placeholder="Send me a message!"
-          className="input-field"
-          style={{ height: "10rem" }}
-          required
-        />
+        <div className="input">
+          <input
+            type="text"
+            name="_subject"
+            placeholder="Subject"
+            className="input-field"
+          />
+        </div>
+        <div className="input">
+          <textarea
+            placeholder="Send me a message!"
+            className="input-field"
+            style={{ height: "10rem" }}
+            required
+          />
+        </div>
         <input type="submit" id="submit" />
       </form>
       <p style={{ fontSize: "14px" }}>Reach me on my socials...</p>

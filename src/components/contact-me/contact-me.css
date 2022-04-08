@@ -89,18 +89,29 @@ a:link {
   width: 35%;
 }
 
+#contact .input-container .input {
+  position: relative;
+}
+
+#contact .input-container .input::before {
+  width: 100%;
+  height: 0.25rem;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa0c7), to(#72d865));
+  background: linear-gradient(to right, #ffa0c7, #72d865);
+  position: absolute;
+  bottom: .5rem;
+  content: "";
+}
+
 #contact .input-container .input-field {
   width: 100%;
   height: 2.25rem;
   margin: 0.5rem 0;
   background: rgba(0, 0, 0, 0.25);
-  border: 2px solid transparent;
-  -o-border-image: linear-gradient(to right, #ffa0c7, #72d865);
-     border-image: -webkit-gradient(linear, left top, right top, from(#ffa0c7), to(#72d865));
-     border-image: linear-gradient(to right, #ffa0c7, #72d865);
-  border-image-slice: 1;
-  padding: .5rem;
+  border: none;
+  padding: 0.5rem;
   color: lightgray;
+  position: relative;
 }
 
 #contact .input-container .input-field:focus {
