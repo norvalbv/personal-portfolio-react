@@ -56,8 +56,8 @@ const ContactMe = () => {
       </form>
       <p style={{ fontSize: "14px" }}>Reach me on my socials...</p>
       <ul id="socials">
-        <li>GitHub</li>
-        <li>Linked In</li>
+        <li><a href="https://github.com/norvalbv/" target="_blank" rel="noopener norefferer">GitHub</a></li>
+        <li><a href="" target="_blank" rel="noopener norefferer">Linked In</a></li>
       </ul>
     </div>
   );
