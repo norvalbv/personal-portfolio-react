@@ -23,7 +23,7 @@ export default function MyWork() {
               <p className="project-desc">
                 A Full Stack e-commerce web app built with the PERN stack. There
                 are different categories, products and more making the web app
-                as releastic as possible.
+                as releastic as possible. 
               </p>
               <div className="more-info">
                 <a
@@ -34,14 +34,14 @@ export default function MyWork() {
                 >
                   Check Live Demo
                 </a>
-                <a
+                {/* <a
                   href="https://github.com/norvalbv/ecommerce"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="more-info-button"
                 >
                   Learn More
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="icons">
@@ -78,14 +78,14 @@ export default function MyWork() {
                   >
                     Learn More
                   </a>
-                  <a
+                  {/* <a
                     href="https://google-clone-by-benji.herokuapp.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="more-info-button"
                   >
                     View Live Demo
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <div className="icons">
@@ -133,14 +133,14 @@ export default function MyWork() {
                 >
                   Learn More
                 </a>
-                <a
+                {/* <a
                   href="https://todo-application-using-pern.herokuapp.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="more-info-button"
                 >
                   View Live Demo
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="icons">
