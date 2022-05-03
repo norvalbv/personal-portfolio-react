@@ -12,6 +12,8 @@ const Skills = () => {
     "Sql",
     "Git",
     "GitHub",
+    "Passport JS",
+    "TailWindCSS",
   ];
 
   return (
@@ -21,7 +23,8 @@ const Skills = () => {
         <p>
           Since my learning journey began I have specialised in the PERN stack.
           However, I am expanding my skills every day, I currently learning
-          TailwindCSS, JEST and my continued learning on all my current skills.
+          TypeScript, GraphQL and my continued learning on all my current
+          skills.
         </p>
       </div>
       <div id="drop-container">

@@ -1,5 +1,5 @@
 import "./mywork.scss";
-import todoApp from "../../../files/images/todo-application.png";
+import knowYourCode from "../../../files/images/know-your-code.png";
 import googleClone from "../../../files/images/google-clone.png";
 import ecomApp from "../../../files/images/landingpage.png";
 
@@ -11,81 +11,66 @@ export default function MyWork() {
         <div className="item">
           <div className="image-flex">
             <img
-              src={ecomApp}
-              alt="Rock Paper Scissors"
+              src={knowYourCode}
+              alt="Interactive Comment Section screenshot"
               className="project-screenshot"
             />
           </div>
-          <div className="text-flex second" id="ecom">
+          <div className="text-flex second" id="todo">
             <h3 className="featured-project">Featured Project</h3>
-            <h4 className="project-title">Full Stack E-commerce App</h4>
+            <h4 className="project-title">Know Your Code</h4>
             <div className="project-desc-wrap">
-              <p className="project-desc">
-                A Full Stack e-commerce web app built with the PERN stack. There
-                are different categories, products and more making the web app
-                as releastic as possible. 
+              <p>
+                I am the team leader for an ongoing open-sourced project which
+                is an 'advanced cheat sheet' having comparisons to W3Schools.
               </p>
-              <div className="more-info">
+              <div>
                 <a
-                  href="https://ecommerce-full-stack.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="more-info-button"
-                >
-                  Check Live Demo
-                </a>
-                {/* <a
-                  href="https://github.com/norvalbv/ecommerce"
+                  href="https://github.com/norvalbv/know-your-code"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="more-info-button"
                 >
                   Learn More
-                </a> */}
+                </a>
               </div>
             </div>
             <div className="icons">
               <ul>
                 <li>HTML/CSS</li>
                 <li>SASS</li>
+                <li>Bootstrap</li>
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>Redux</li>
                 <li>Node</li>
-                <li>Express JS</li>
+                <li>Express</li>
                 <li>PostgreSQL</li>
+                <li>Passport JS</li>
               </ul>
             </div>
           </div>
         </div>
         <div className="item">
-          <div className="text-flex first" id="google">
+          <div className="text-flex first" id="ecom">
             <div className="project-details">
               <h3 className="featured-project">Featured Project</h3>
-              <h4 className="project-title">Google Clone</h4>
+              <h4 className="project-title">Full Stack ECommerce App</h4>
               <div className="project-desc-wrap" id="second-project">
                 <p>
-                  A Google Clone built with React hooks and functional
-                  components. The project uses an online API from RapidAPIs for
-                  receiving the data.
+                  A Full Stack e-commerce web app built with the PERN stack.
+                  There are different categories, products and more making the
+                  web app as releastic as possible.
                 </p>
                 <div className="more-info">
                   <a
-                    href="https://github.com/norvalbv/google-clone"
+                    href="https://github.com/norvalbv/ecommerce"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="more-info-button"
                   >
                     Learn More
                   </a>
-                  {/* <a
-                    href="https://google-clone-by-benji.herokuapp.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="more-info-button"
-                  >
-                    View Live Demo
-                  </a> */}
                 </div>
               </div>
               <div className="icons">
@@ -94,14 +79,18 @@ export default function MyWork() {
                   <li>SASS</li>
                   <li>JavaScript</li>
                   <li>React</li>
-                  <li>API</li>
+                  <li>Redux</li>
+                  <li>Node</li>
+                  <li>Express JS</li>
+                  <li>PostgreSQL</li>
+                  <li>Passport JS</li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="image-flex">
             <img
-              src={googleClone}
+              src={ecomApp}
               alt="Interactive Comment Section screenshot"
               className="project-screenshot"
             />
@@ -110,37 +99,29 @@ export default function MyWork() {
         <div className="item">
           <div className="image-flex">
             <img
-              src={todoApp}
-              alt="Interactive Comment Section screenshot"
+              src={googleClone}
+              alt="ECommerce App Project Screenshot"
               className="project-screenshot"
             />
           </div>
-          <div className="text-flex second" id="todo">
+          <div className="text-flex second" id="google">
             <h3 className="featured-project">Featured Project</h3>
-            <h4 className="project-title">Full Stack Todo app</h4>
+            <h4 className="project-title">Google Clone</h4>
             <div className="project-desc-wrap">
-              <p>
-                A full stack to-do application using the PERN stack. This
-                application has recently been updated from client-side only to
-                now be full stack.
+              <p className="project-desc">
+                A Google Clone built with React hooks and functional components.
+                The project uses an online API from RapidAPIs for receiving the
+                data.
               </p>
-              <div>
+              <div className="more-info">
                 <a
-                  href="https://github.com/norvalbv/todo-app-pern-stack"
+                  href="https://github.com/norvalbv/google-clone"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="more-info-button"
                 >
-                  Learn More
+                  Check Live Demo
                 </a>
-                {/* <a
-                  href="https://todo-application-using-pern.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="more-info-button"
-                >
-                  View Live Demo
-                </a> */}
               </div>
             </div>
             <div className="icons">
@@ -149,9 +130,7 @@ export default function MyWork() {
                 <li>SASS</li>
                 <li>JavaScript</li>
                 <li>React</li>
-                <li>Express</li>
-                <li>Node</li>
-                <li>PostgreSQL</li>
+                <li>API</li>
               </ul>
             </div>
           </div>

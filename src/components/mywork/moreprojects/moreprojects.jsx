@@ -8,8 +8,7 @@ export default function MoreProjects() {
         <div className="project">
           <h2 className="project-title">IP Tracker App</h2>
           <p className="project-desc">
-            A IP tracking application that uses the implementation of two APIs
-            (Leaflet.js and IPify) to make the application work.
+            A IP tracking application that uses Leaflet JS and IPify JS
           </p>
           <a
             href="https://github.com/norvalbv/IP-Address-Tracker"
@@ -29,9 +28,7 @@ export default function MoreProjects() {
         <div className="project">
           <h2 className="project-title">Rock Paper Scissors Game</h2>
           <p className="project-desc">
-            A Rock Paper Scissors game built with React. The project build has
-            tested my CSS animations and understanding and also understanding of
-            managing complex states.
+            A Rock Paper Scissors game built with React.
           </p>
           <a
             href="https://github.com/norvalbv/rock-paper-scissors"
@@ -47,24 +44,30 @@ export default function MoreProjects() {
             <li>JavaScript</li>
             <li>React</li>
             <li>Redux</li>
+            <li>Express</li>
+            <li>PostgreSQL</li>
           </ul>
         </div>
         <div className="project">
-          <h2 className="project-title">Know Your Code</h2>
+          <h2 className="project-title">Todo application</h2>
           <p className="project-desc">
-            I am the team leader of an on-going full stack grouped project that
-            outlines software questions and answers in simple ways. This project
-            is in early stages but you're more than welcome to see our
-            progression!
+            A full stack to-do application using the PERN stack
           </p>
           <a
-            href="https://github.com/norvalbv/know-your-code"
+            href="https://github.com/norvalbv/todo-app-pern-stack"
             target="_blank"
             rel="noopener noreferrer"
             className="learn-more-button"
           >
             Learn More
           </a>
+          <ul className="icons">
+            <li>HTML/CSS</li>
+            <li>SASS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Redux</li>
+          </ul>
         </div>
       </div>
       <button className="learn-more-button">
