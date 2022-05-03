@@ -92,3 +92,8 @@ a:link {
     radial-gradient(at 50% 45%, $secondary-clr-3 0, transparent 25%),
     radial-gradient(at 50% 55%, $secondary-clr-3 0, transparent 60%);
 }
+
+.screen-container {
+  max-width: 2000px;
+  margin: 0 auto;
+}

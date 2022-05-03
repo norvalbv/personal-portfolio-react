@@ -111,6 +111,9 @@ h2 span:hover {
   color: $secondary-clr-3;
 }
 
+@media only screen and (max-width: 1000px) {
+}
+
 @media only screen and (max-width: 650px) {
   #intro {
     text-align: center;

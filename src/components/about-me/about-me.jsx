@@ -1,6 +1,5 @@
 import "./about-me.scss";
 import profilePhoto from "../../files/images/profile-photo.png";
-// import pdfCV from "../../files/other/benjamin-cv.pdf";
 
 const AboutMe = () => {
   return (
@@ -16,22 +15,17 @@ const AboutMe = () => {
       <div className="about-text">
         <h2>About Me</h2>
         <p>
-          I am a Full Stack developer from Wales, United Kingdom spcialising in
-          the PERN stack.
+          Business graduate turned Full Stack software developer that has 1.5
+          years of experience in web development.
           <br />
           <br />
-          After obtaining my First Class Honours in my business degree at The
+          After obtaining my First Class Honours in my degree at The
           University of Reading I picked up a liking for programming and have
           been coding ever since.
           <br />
           <br />I would love for you to check out my projects and even reach
           out!
         </p>
-        {/* <button> */}
-          {/* <a href={pdfCV} target="_blank" rel="noopener noreferrer">
-            Download my CV
-          </a> */}
-        {/* </button> */}
       </div>
     </div>
   );

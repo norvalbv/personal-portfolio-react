@@ -11,12 +11,14 @@ const PortfolioPage = () => {
   return (
     <div className="portfolio">
       <NavBar />
-      <Intro />
-      <AboutMe />
-      <MyWork />
-      <MoreProjects />
-      <Skills />
-      <ContactMe />
+      <div className="screen-container">
+        <Intro />
+        <AboutMe />
+        <MyWork />
+        <MoreProjects />
+        <Skills />
+        <ContactMe />
+      </div>
       <Footer />
     </div>
   );
